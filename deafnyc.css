@@ -1,0 +1,18 @@
+@keyframes DriftingClouds {
+    0%      { background-position: 0 0; }
+    100%    { background-position: -300vw 0; transform: scale(2.5);}
+}
+
+#wrapper {
+    background: url(/images/clouds.png) repeat-x 0 0;
+    animation: DriftingClouds 50s linear infinite;
+}
+
+.slight-radius{
+	border-radius: .3em;
+}
+
+
+.slight-opacity{
+	opacity: .4;
+}
