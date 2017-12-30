@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost:2343/bare/Testimonial -->
+<html manifest="/app.manifest"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="./Grammar Shapes_files/merged-stylesheets.css">
+<script type="text/javascript" src="./Grammar Shapes_files/saved_resource"></script>
+	<script type="text/javascript" src="./Grammar Shapes_files/checkout.js"></script>
+<title>Grammar Shapes</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="mobile-web-app-capable" content="yes">
+			<link href="./Grammar Shapes_files/css" rel="stylesheet">
+			<link rel="icon" sizes="16x16 32x32" href="http://localhost:2343/favicon.ico?v=3">
+
+<style type="text/css">[userportal] {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fcfcfc;
+  font-size: 2.5vmin;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+[userportal] .at-signup-link,
+[userportal] .at-signin-link {
+  color: rgba(0,0,0,0.2);
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  left: 0;
+  text-align: center;
+}
+[userportal] .at-link.at-signup,
+[userportal] .at-link.at-signin {
+  color: #ff4d4d;
+  font-weight: 100;
+  border-radius: 2em;
+  font-weight: 200;
+  padding: 0.2em 1em;
+  border: none;
+  white-space: nowrap;
+  transition: 0.2s ease-in;
+  line-height: 1em;
+  text-decoration: none;
+  background: transparent;
+  display: inline-block;
+}
+[userportal] .at-link.at-signup:hover,
+[userportal] .at-link.at-signin:hover {
+  background: #ff4d4d;
+  color: #fff;
+  transform: translateY(-0.2em);
+  box-shadow: 0em 0.2em 1em rgba(0,0,0,0.3);
+}
+[userportal] form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+[userportal] span {
+  font-size: 0.6em;
+  display: block;
+  color: #808080;
+}
+[userportal] label {
+  font-size: 0.5em;
+  display: block;
+  color: #808080;
+  display: none;
+}
+[userportal] h3 {
+  font-size: 2em;
+  font-weight: 200;
+  text-align: center;
+  margin: 0.5em 0 1em;
+  color: #000;
+}
+[userportal] .at-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+[userportal] button {
+  border-radius: 2em;
+  padding: 0.25em 1.5em;
+  outline: none;
+  border: none;
+  transition: 0.2s ease-in;
+  line-height: 1em;
+  color: #fff;
+  border: 0.2em solid transparent;
+  background: #2094f3;
+  margin-top: 1.2em;
+}
+[userportal] button:hover {
+  background: #fff;
+  color: #2094f3;
+  border-color: #2094f3;
+  transform: translateY(-0.2em);
+  box-shadow: 0em 0.2em 1em rgba(0,0,0,0.3);
+}
+[userportal] input {
+  border: none;
+  background: #eeeded;
+  padding: 0.5em;
+  margin: 0.3em;
+}
+[userportal] input:focus,
+[userportal] input:hover {
+  background: #f5deb3;
+  outline: none;
+}
+</style><style type="text/css">[whiteboard] {
+  width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: #fafafa;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+[whiteboard] [window-x] {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-size: 1.5vmin;
+}
+[whiteboard] [window-s],
+[whiteboard] [window] {
+  width: 100%;
+}
+</style><style type="text/css">[menu] {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 1.5vmin;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+[menu] [button] {
+  margin-left: 0.7em;
+  border: 0.2em solid;
+  background: #fff;
+  user-select: none;
+}
+[menu] [button] * {
+  user-select: none;
+}
+[menu] [button="add"] {
+  color: #2094f3;
+}
+[menu] [button="add"]:hover {
+  background: #2094f3;
+  color: #fff;
+  border-color: transparent;
+}
+[menu] [button="options"] {
+  color: #808080;
+}
+[menu] [logo] {
+  height: 3em;
+  opacity: 0.7;
+  filter: grayscale(1);
+  user-select: none;
+}
+[menu] [logo]:hover {
+  filter: none;
+}
+</style><style type="text/css">[logo] img {
+  height: 100%;
+}
+</style><style type="text/css">[shapeChooser] {
+  display: flex;
+  background: #e6e6e6;
+  font-size: calc(2vmin + 2vmax);
+  padding: 0 0.5em;
+}
+[shapeChooser] [grmmrShape] {
+  height: 1em;
+  width: 100%;
+  justify-content: center;
+  margin: 0.2em 0.1em;
+  pointer-events: auto;
+}
+[shapeChooser] [grmmrShape]:hover {
+  background: #bfbfbf;
+}
+[shapeChooser]:hover {
+  opacity: 1;
+}
+[shapeChooser] [textFilterButton] img {
+  height: 0.8em;
+  padding: 0 0 0 1em;
+}
+</style><style type="text/css">[magnetSheet] {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: auto;
+}
+[magneticObject] {
+  font-size: calc(2vmin + 2vmax);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+[magneticObject] [grmmrCard] {
+  padding: 0.2em 0.3em;
+}
+[magneticObject] [reminder] {
+  display: none;
+}
+[magneticObject] [textcontainer] {
+  background: #fff;
+  padding: 0.1em;
+  min-width: 20em;
+}
+[magneticObject] [textcontainer].wide {
+  min-width: 90vw;
+}
+[magneticObject] [dragHandle] {
+  width: 1em;
+  height: 1em;
+  transform: translate(-0.8em, -0.9em);
+  opacity: 0;
+  transition: 120ms opacity ease-in;
+}
+[magneticObject] [dragHandle].visible {
+  opacity: 1;
+}
+[magneticObject] [dragHandle] img {
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+</style><style type="text/css">[shapeChipsBox] {
+  position: absolute;
+  pointer-events: none;
+  overflow: hidden;
+  bottom: 0;
+}
+[shapeChips] {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background: #e6e6e6;
+  font-size: calc(2vmin + 2vmax);
+  max-width: calc(31vmin + 31vmax);
+  border-radius: 0.3em;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(106%);
+  transition: 0ms transform 120ms ease-out, 120ms opacity 0s ease-in;
+  left: 0;
+  right: 0;
+  margin: 0 auto calc(2vmin + 3vmax);
+}
+[shapeChips].visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: 200ms transform 20ms ease-in-out, 200ms opacity 100ms ease-in-out;
+  background: #e6e6e6;
+}
+[shapeChips] [grmmrcard] {
+  background: #fff;
+  padding: 0.2em;
+  margin: 0.2em;
+  align-items: center;
+  position: relative;
+  transition: 200ms opacity 50ms ease-in, 100ms transform 0ms ease-in;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+[shapeChips] [grmmrcard]:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+[shapeChips] [reminder] {
+  font-size: 0.4em;
+  position: absolute;
+  opacity: 0;
+  top: 0.4em;
+  right: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  transition: 0.5s opacity 0.2s ease-in;
+}
+[shapeChips] [reminder]:hover {
+  opacity: 1;
+}
+[shapeChips] [reminder="hidden"] {
+  display: none;
+}
+</style><style type="text/css">[textContainer] {
+  pointer-events: auto;
+  border-bottom: #ffc0cb 0.1vw solid;
+}
+[textContainer]:hover [deleteContainer] {
+  color: #000;
+}
+</style><style type="text/css">[mouseBagSheet] {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
+  z-index: 10;
+}
+[mouseBag] {
+  max-width: 20em;
+  user-select: none;
+  pointer-events: none;
+}
+[mouseBagBox]:first-of-type {
+  background: rgba(255,255,255,0.75);
+  opacity: 1;
+}
+[mouseBagBox] {
+  opacity: 0.5;
+  height: 1.4em;
+  border-radius: 0 1em 1em 1em;
+  background: rgba(255,255,255,0.75);
+  pointer-events: none;
+  transition: 100ms opacity 15ms ease-in, 200ms margin 15ms ease-in, 200ms transform 15ms ease-in, 200ms box-shadow 15ms ease-in;
+  box-shadow: 0 -0.12em 0.3em rgba(0,0,0,0.33);
+  font-size: calc(2vmin + 2vmax);
+  user-select: none;
+}
+[mouseBagBox] [grmmrCard] {
+  padding: 0 0.3em;
+}
+[mouseBagBox] [reminder] {
+  display: none;
+}
+[mouseBagBox] [textBox] img {
+  height: 0.75em;
+  padding: 0.1em 0.4em;
+}
+</style><style type="text/css">[sideLibrary] {
+  filter: brightness(0.95);
+  background: #ffd500;
+  color: #000;
+}
+[LibraryButtonTransition] {
+  transition: 175ms opacity 50ms ease-in, 100ms all ease-in;
+}
+[LibraryButtonTransition].fb-0 {
+  opacity: 0;
+}
+[LibraryButtonTransition].fb-1 {
+  opacity: 1;
+}
+[LibraryButtonTransition].fb-0 > div {
+  opacity: 0;
+}
+[LibraryButtonTransition].fb-1 > div {
+  opacity: 1;
+}
+</style><style type="text/css">[editorStorage] {
+  height: 100vh;
+  max-height: 100vh;
+  background: #ffc0cb;
+}
+[editorContainer] {
+  color: #fff;
+  width: 50vw;
+  border: none;
+}
+</style><style type="text/css">[window-x] {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-size: 1.5vmin;
+}
+[window-s] [window] {
+  width: 100%;
+}
+</style><style type="text/css"></style><style type="text/css">[meta] {
+  z-index: 10;
+}
+</style></head>
+<body>
+
+
+
+<script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.4.4.2%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22development%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%22plans%22%3A%5B%7B%22name%22%3A%22whiteboard-month%22%2C%22amount%22%3A%7B%22cents%22%3A1000%2C%22usd%22%3A%22%2410.00%22%7D%2C%22limit%22%3A1%2C%22interval%22%3A%22month%22%7D%2C%7B%22name%22%3A%22whiteboard-year%22%2C%22amount%22%3A%7B%22cents%22%3A10000%2C%22usd%22%3A%22%24100.00%22%7D%2C%22limit%22%3A1%2C%22interval%22%3A%22year%22%7D%5D%2C%22stripe%22%3A%7B%22testPublishableKey%22%3A%22pk_test_tzVkg2do3ZlpXghQQkIEPX5b%22%2C%22livePublishableKey%22%3A%22pk_live_KrwdWKnMuGp6j3xKwif5b5OE%22%7D%7D%2C%22ROOT_URL%22%3A%22http%3A%2F%2Flocalhost%3A2343%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22accountsConfigCalled%22%3Atrue%2C%22appId%22%3A%221gmv9zw108swce1gjnm9x%22%2C%22autoupdateVersion%22%3A%22d49f11e87ef43d2b08d66e5333bb29bac5164cf0%22%2C%22autoupdateVersionRefreshable%22%3A%22edefa66edbdfd9f0f94aec15a412fb36987e3803%22%2C%22autoupdateVersionCordova%22%3A%22none%22%7D"));</script>
+
+  <script type="text/javascript" src="./Grammar Shapes_files/underscore.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteor.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/modules-runtime.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/modules.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/base64.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ejson.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/check.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/es5-shim.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/promise.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ecmascript-runtime.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/babel-compiler.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ecmascript.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/jquery.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/tracker.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/id-map.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/babel-runtime.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/random.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/mongo-id.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/diff-sequence.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/observe-sequence.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/reactive-var.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ordered-dict.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/deps.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/htmljs.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/blaze.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/spacebars.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/templating-compiler.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/templating-runtime.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/templating.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/geojson-utils.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/minimongo.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/retry.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ddp-common.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/reload.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ddp-client.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ddp.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ddp-server.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/allow-deny.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/mongo.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/pack.grmmr.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/stolinski_stylus-multi.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/pack.grmmr.cards.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/pack.grmmr.bank.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/twbs_bootstrap.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/summernote_summernote.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/coffeescript.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/sha.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/reactive-dict.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/manuel_isdev.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/manuel_reactivearray.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/manuel_viewmodel-debug.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/manuel_viewmodel.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/pack.grmmr.text.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ddp-rate-limiter.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/localstorage.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/callback-hook.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/accounts-base.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/srp.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/accounts-password.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/useraccounts_core.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/kadira_flow-router.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/kadira_blaze-layout.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/softwarerero_accounts-t9n.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/useraccounts_flow-routing.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/useraccounts_unstyled.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/juliancwirko_postcss.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/standard-minifier-js.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/stylus.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/session.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/npm-bcrypt.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteor-base.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/shell-server.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/webapp.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/aldeed_simple-schema.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/raix_eventemitter.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/aldeed_collection2-core.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/aldeed_schema-index.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/aldeed_schema-deny.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/aldeed_collection2.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_toykit.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/msavin_mongol.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/msavin_jetsetter.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_blueprint.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_authenticate.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_shell.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_method.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_result.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_autopub.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_pub.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_sub.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_email.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_listen.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_throttle.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_status.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_hotreload.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteortoys_allthings.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/blaze-html-templates.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteorhacks_subs-manager.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/mrgalaxy_stripe.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/alanning_roles.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/summernote_standalone.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/zimme_active-route.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/arillo_flow-router-helpers.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/url.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/http.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ostrio_cookies.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ostrio_files.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/markdown.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/meteorblackbelt_force-ssl.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/mdg_validated-method.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/didericis_permissions-mixin.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/rlivingston_simple-schema-mixin.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ziarno_provide-mixin.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ui.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/raix_handlebar-helpers.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/ccorcos_subs-cache.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/intent-scroll-down.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/layout.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/zkroll-ribbon.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/appcache.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/lacosta_method-hooks.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/livedata.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/hot-code-push.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/autoupdate.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/global-imports.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/app.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/service-configuration.js"></script>
+  <script type="text/javascript" src="./Grammar Shapes_files/mdg_validation-error.js"></script>
+
+
+
+
+<iframe name="stripeXDM_default158384_provider" id="stripeXDM_default158384_provider" aria-hidden="true" src="./Grammar Shapes_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe><div id="__blaze-root"><body>
+    <main class="flex width-full" style="max-height: 100vh; overflow-scroll: auto;">
+        
+        <div class="flex flex-column height-full-viewport flex-auto fb-1">
+            <div class="bg-green overflow-auto transition-1 flex-auto justify-stretch flex flex-column fb-0">
+        <div class="relative bg-white z4 flex flex-auto fb-03">
+            <div class="p2 flex items-center flex-auto fb-1">
+              <div class="flex items-center justify-center"><div class="button button-pill bg-white type-size-three color-red transition-1"><img src="./Grammar Shapes_files/back.svg" class="height-two type-size-three px2 py2"></div></div>
+                
+                <div class="px1 type-size-menu button color- bg-white type-name-normal flex justify-center items-center"> <img src="./Grammar Shapes_files/noun.svg" class="pr1 height-two"><div>Groups</div></div>
+              
+                <div class="px1 type-size-menu button color- bg-white type-name-normal flex justify-center items-center"> <img src="./Grammar Shapes_files/noun.svg" class="pr1 height-two"><div>Pages</div></div>
+              
+
+              
+               	<div class="px1 type-size-menu button color-black bg-white type-name-normal flex justify-center items-center"> <img src="./Grammar Shapes_files/adjective.svg" class="pr1 height-two"><div>actions</div></div>
+                
+               	<div class="px1 type-size-menu button color-plain bg-white type-name-normal flex justify-center items-center"> <img src="./Grammar Shapes_files/adjective.svg" class="pr1 height-two"><div>plain</div></div>
+                
+
+              
+                <div class="px1 type-size-menu button color- bg-white type-name-normal flex justify-center items-center"> <img src="./Grammar Shapes_files/adverb.svg" class="pr1 height-two"><div>Look</div></div>
+                
+                <div class="px1 type-size-menu button color- bg-white type-name-normal flex justify-center items-center"> <img src="./Grammar Shapes_files/adverb.svg" class="pr1 height-two"><div>Edit</div></div>
+                
+                <div class="px1 type-size-menu button color- bg-white type-name-normal flex justify-center items-center"> <img src="./Grammar Shapes_files/verb-not.svg" class="pr1 height-two"><div>Old Edit</div></div>
+                
+              
+
+              
+            
+</div>
+                <div class="flex items-center justify-end flex-auto fb-1"> 
+   <div class="flex items-center justify-center button button-pill bg-black px1 py0 mx2 type-size-menu color-white">Logout</div>
+    
+</div>
+            
+</div>
+
+            <div class="pl2 pt2 relative flex z4 bg-g flex-wrap overflow-hidden items-start flex-auto fb-1">
+            
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>5N434YH6BeqkwBeMA</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>EosqfX9JJ7vi9DgZT</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>FzMBvrFzZM6d5cdyS</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>JhhXgptbZtkWkhnmm</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>NgMW9Qg7uZSCtmpra</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>NwzPpgQpL4LQ66k8N</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>Pa3D3Saq4N8sLBFCf</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>Pages</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>YGYnizYooiLx5XPub</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>YfWGYSvamGeAJmzsy</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>eXAAicWgrG2E7fH64</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>h5HQW2zbt2ix73Si6</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>i3TDa7JbxAinYeM2w</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>iR66sDP8qYoPuYvq3</div></div>
+                
+                  <div class="button button-pill bg-black color-white px1 type-size-menu color- bg- type-name-normal flex justify-center items-center"><div>mDKrfQSY93npJ2GWf</div></div>
+                
+          
+</div>
+           
+        </div>
+        <div class="p2 bg-green flex items-center flex-auto fb-02">
+          <div class="flex width-full">
+            <div class="mr2 items-center justify-center flex user-select-none pointer-events-none button-pill color-white transition-1"><img class="type-size-three height-two" src="./Grammar Shapes_files/logo.svg"></div>
+            
+                   <a href="http://localhost:2343/ish" class="px1 type-size-menu py0 px2 button button-pill color-black bg-white flex justify-center items-center"> <img src="./Grammar Shapes_files/link.svg" class="pr1 height-two type-size-paragraph"><div class="type-name-normal type-size-">Home</div></a>
+            
+                   <a href="http://localhost:2343/ish/board" class="px1 type-size-menu py0 px2 button button-pill color-black bg-white flex justify-center items-center"> <img src="./Grammar Shapes_files/slide.svg" class="pr1 height-two type-size-paragraph"><div class="type-name-normal type-size-">Board</div></a>
+            
+          </div>
+        
+</div>
+            
+                <div class="flex flex-auto fb-3">
+                    <div class="bg-yellow flex flex-auto fb-03">
+        <div class="type-size-title items-center justify-center flex-auto fb-1 bg-cloudy">
+            <div class="p2 flex items-center color-white type-size-note bg-green">Grammar Shapes Library</div>
+            <div class="pl2 flex flex-column width-full flex-auto fb-1">
+                
+	                
+	                      
+	                          
+    <a href="http://localhost:2343/bare/Testimonial">
+    
+	                          	<div class="flex">
+    
+    	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/verb.svg" aria-label="/packages/pack.grmmr/shapes/verb.svg" class="type-size-paragraph width-two"></div>
+    
+    
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/Pa3D3Saq4N8sLBFCf" class="button button-pill pl1 block color-black type-size-paragraph">Verbs</a>
+  
+  
+  </div>
+	                          
+	 </a>
+ 
+	                          
+	                
+	                      
+	                          
+    <a href="http://localhost:2343/bare/Testimonial">
+    
+	                          	<div class="flex">
+    
+    	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/noun.svg" aria-label="/packages/pack.grmmr/shapes/noun.svg" class="type-size-paragraph width-two"></div>
+    
+    
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/hA4cvg8XTrmxgz2Mb" class="button button-pill pl1 block color-black type-size-paragraph">Nouns</a>
+  
+  
+  </div>
+	                          
+	 </a>
+ 
+	                          
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/adjective.svg" aria-label="/packages/pack.grmmr/shapes/adjective.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/CAxb2J5Zco5C3yAMs" class="button button-pill pl1 block color-black type-size-paragraph">Adjectives</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/article.svg" aria-label="/packages/pack.grmmr/shapes/article.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/i3TDa7JbxAinYeM2w" class="button button-pill pl1 block color-black type-size-paragraph">Articles</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/pronoun.svg" aria-label="/packages/pack.grmmr/shapes/pronoun.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/mSY6pcn4bwFcjyHxp" class="button button-pill pl1 block color-black type-size-paragraph">Pronouns</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/preposition.svg" aria-label="/packages/pack.grmmr/shapes/preposition.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/pGkGEJuc7eojEbR8u" class="button button-pill pl1 block color-black type-size-paragraph">To</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/adverb.svg" aria-label="/packages/pack.grmmr/shapes/adverb.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/QejypWSDmhdsadk6P" class="button button-pill pl1 block color-black type-size-paragraph">Path</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              
+  
+    
+    
+    
+    <div class="py2 px1"></div>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/layoutcolor.svg" aria-label="/layoutcolor.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/YfWGYSvamGeAJmzsy" class="button button-pill pl1 block color-black type-size-paragraph">Writing</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/training.svg" aria-label="/training.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/zcdrcG8F4zaEyMDke" class="button button-pill pl1 block color-black type-size-paragraph">Reading</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/y2mJEvqiBezXaBX2t" class="button button-pill pl1 block color-black type-size-paragraph">Wordbook</a>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              
+  
+    
+    
+    
+    <div class="py2 px1"></div>
+  
+  
+	                            </div>
+	                        
+	                
+	                      
+	                             <div class="flex">
+	                              
+	                              	<div class="type-size-paragraph width-two pr3s"><img src="./Grammar Shapes_files/training.svg" aria-label="/training.svg" class="type-size-paragraph width-two"></div>
+	                              
+	                              
+  
+    
+    
+    
+    <a href="http://localhost:2343/action/ListView/SzoF72eTN4RxJ4ofm" class="button button-pill pl1 block color-black type-size-paragraph">Training</a>
+  
+  
+	                            </div>
+	                        
+	                
+                
+            
+</div>
+        </div>
+    
+</div>
+                    
+  
+    
+    
+    
+    <div class="p3 height-full sheet-soft flex-column justify-center items-center flex bg-yellow">
+        <img class="type-size- height-two" src="./Grammar Shapes_files/logo.svg">
+        <div class="mt2 center type-size-title type-name-monospace ">
+            Oops. Are you in the right place?
+            Let's go back.
+        </div>
+    </div>
+  
+  
+                
+</div>
+            
+        
+</div>
+        
+    </main>
+    <nav>
+        
+  
+    
+    
+  
+    </nav>
+    
+    <div mousebagsheet="">
+        <div mousebag="" class="flex justify-start flex-wrap items-end absolute top-0 left-0 z-4" style="font-size: 1.5em; transform: translate(791px, 722px);">
+            
+            
+        </div>
+    </div>
+
+   <!-- begin olark code -->
+<!-- <script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('1949-201-10-9807');</script> -->
+<!-- end olark code -->
+
+    </body></div><!-- Meteor Toys Begin -->
+	
+		
+	
+	
+	
+<!-- Meteor Toys End --><div id="libraryextension_installed" data-libraries="[&quot;nypl&quot;]"></div><iframe src="./Grammar Shapes_files/outer.html" frameborder="0" allowtransparency="true" scrolling="no" tabindex="-1" aria-hidden="true" style="width: 1px !important; height: 1px !important; position: fixed !important; visibility: hidden !important; pointer-events: none !important;"></iframe></body></html>
