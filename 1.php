@@ -1,6 +1,5 @@
 <?php
  /* Template Name: 1 */
-get_header();
 $featured_course_id = 8;
 $teachers = new WP_Query( [ 'post_type' => 'teacher', 'posts_per_page' => 4 ] );
 $courses = new WP_Query( [ 'post_type' => 'download', 'posts_per_page' => 2 ] );
@@ -37,5 +36,3 @@ width: 100vw; " class="absolute width-full-viewport height-full-viewport z0 poin
 </div>
     </a>
   </div>
-
-<?php get_footer(); ?>
