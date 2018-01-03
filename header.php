@@ -11,5 +11,4 @@
 	</head>
 	<body <?php body_class(); ?>>
     <header class="container-fluid">
-		HELLO
     </header>
