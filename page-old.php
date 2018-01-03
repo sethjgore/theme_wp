@@ -7,6 +7,9 @@ $courses = new WP_Query( [ 'post_type' => 'download', 'posts_per_page' => 2 ] );
 $posts = new WP_Query( [ 'post_type' => 'post', 'posts_per_page' => 4 ] );
 
 ?>
+<script>
+    console.log(<?php echo $teachers; ?>)
+</script>
 
 <div id="home-hero">
     <div class="home-hero-cta">
