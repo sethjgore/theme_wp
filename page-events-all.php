@@ -47,9 +47,7 @@
        
 
   <?php while( $teachers->have_posts() ) : $teachers->the_post(); ?>
-      
-
-      <?php the_title(); ?>
+    
 
       <?php // check if the repeater field has rows of data
     if( have_rows('cycle_events') ):
@@ -60,14 +58,9 @@
       $event = get_sub_field('event');
 
       if($event->start_time && $event->end_time){
-        $time = $event->$start_time." - ".$event->end_time;
-        echo $time;
-        echo $event->start_time;
-        echo $event->end_time;
+        // $time = $event->$start_time." - ".$event->end_time;
       }else if($event->start_time){
-        $time = date($event->start_time);
-                echo $time;
-                echo date('g:i a', $time);
+        // $time = date($event->start_time);
 
       }
      
