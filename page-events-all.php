@@ -16,6 +16,18 @@
 
       <?php the_title(); ?>
 
+      <?php // check if the repeater field has rows of data
+    if( have_rows('cycle_events') ):
+
+    echo "true";
+
+    else :
+
+    // no rows found
+
+endif; ?>
+
+
 <?php endwhile; ?>
 
 
