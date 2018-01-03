@@ -6,6 +6,7 @@
 
 <?php
 
+wp_reset_query();
   $teachers = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
 ?>
 
