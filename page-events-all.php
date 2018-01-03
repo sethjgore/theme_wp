@@ -55,9 +55,8 @@
     // loop through the rows of data
     while ( have_rows('cycle_events') ) : the_row();
 
-        
+
       $event = get_sub_field('event');
-echo $event->ID;
       if($event->start_time && $event->end_time){
         // $time = $event->$start_time." - ".$event->end_time;
       }else if($event->start_time){
