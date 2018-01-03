@@ -12,7 +12,7 @@
 ?>
 
  <?php while( $teachers->have_posts() ) : $teachers->the_post(); ?>
-           
+      <?php the_title(); ?>
   <?php endwhile; ?>
 
 <div class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
