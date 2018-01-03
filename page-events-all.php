@@ -8,11 +8,33 @@
 
 <?php
 
-  $teachers = new WP_Query( [ 'post_type' => 'events', 'posts_per_page' => 4 ] );
+  $teachers = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
 ?>
 
  <?php while( $teachers->have_posts() ) : $teachers->the_post(); ?>
       <?php the_title(); ?>
+
+      <?php // check if the repeater field has rows of data
+if( have_rows('cycle_events') ):
+
+  // loop through the rows of data
+    while ( have_rows('cycle_events') ) : the_row();
+
+        // display a sub field value
+        $event = the_sub_field('event');
+
+        echo $event['title']
+
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+?>
+
   <?php endwhile; ?>
 
 <div class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
