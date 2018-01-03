@@ -7,6 +7,8 @@ $posts = new WP_Query( [ 'post_type' => 'post', 'posts_per_page' => 4 ] );
 
 ?>
 
+<?php get_header(); ?>
+
 <div class="transition-1 flex-auto fb-2 flex flex-column">
     <div id="wrapper" style="
     background-size: cover; height: 100vh;
@@ -36,3 +38,6 @@ width: 100vw; " class="absolute width-full-viewport height-full-viewport z0 poin
 </div>
     </a>
   </div>
+
+
+<?php get_footer(); ?>
