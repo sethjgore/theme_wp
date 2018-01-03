@@ -24,7 +24,7 @@
 
       echo 'true';
 
-      if(has_sub_field('event')){
+      if(the_field('event')){
         echo "event";
         $event = the_sub_field('event');
       }
