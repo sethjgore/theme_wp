@@ -44,7 +44,7 @@
         <div class="flex flex-column flex-auto p1 fb-1">
             <div class="type-size-menu type-name-serif black flex-auto fb-1 line-height-4">
               <?php echo $event->description; ?></div>
-            <div class="trans-black type-size-menu type-name-serif italic line-height-4"><?php echo $event->date; ?><? if($time): echo "/".$time ?>   </div>
+            <div class="trans-black type-size-menu type-name-serif italic line-height-4"><?php echo $event->date; ?><?php if($time): echo "/".$time ?>   </div>
         </div>
         
     </a>
