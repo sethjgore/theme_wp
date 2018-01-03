@@ -47,7 +47,7 @@
        
 
   <?php while( $teachers->have_posts() ) : $teachers->the_post(); ?>
-    
+      
 
       <?php // check if the repeater field has rows of data
     if( have_rows('cycle_events') ):
