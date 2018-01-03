@@ -19,7 +19,15 @@
       <?php // check if the repeater field has rows of data
     if( have_rows('cycle_events') ):
 
-    echo "true";
+    // loop through the rows of data
+    while ( have_rows('cycle_events') ) : the_row();
+
+        // display a sub field value
+        $event = the_sub_field('event');
+
+        echo "hello";
+
+    endwhile;
 
     else :
 
