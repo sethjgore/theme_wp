@@ -1,8 +1,6 @@
 <?php
  /* Template Name: Page 1 */
 
- define( 'THEME_IMAGES', get_template_directory_uri().'/images' );
-
 ?>
 
 <?php get_header(); ?>
