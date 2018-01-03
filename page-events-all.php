@@ -26,7 +26,8 @@
 
       if(the_field('event')){
         echo "event";
-        echo the_field('event');
+        $event = the_field('event');
+        echo $event;
       }
 
     endwhile;
