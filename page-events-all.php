@@ -10,9 +10,6 @@
 
   $teachers = new WP_Query( [ 'post_type' => 'event', 'posts_per_page' => 4 ] );
 ?>
-<script type="text/javascript">
-    console.log("")
-</script>
 
 <?php echo $teachers; ?>
 
