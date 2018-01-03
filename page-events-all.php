@@ -55,8 +55,9 @@
     // loop through the rows of data
     while ( have_rows('cycle_events') ) : the_row();
 
+        
       $event = get_sub_field('event');
-
+echo $event->ID;
       if($event->start_time && $event->end_time){
         // $time = $event->$start_time." - ".$event->end_time;
       }else if($event->start_time){
@@ -66,7 +67,7 @@
      
       ?>
 
-          <a href="" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><?php echo $event->title; ?> </div></div>
+          <a href="<?php echo get_post_permalink($event->ID) ?>" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><?php echo $event->title; ?> </div></div>
         
         <div class="flex flex-auto fb-02 height-full items-center flex-column">
             
