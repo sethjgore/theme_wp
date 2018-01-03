@@ -22,10 +22,33 @@
     // loop through the rows of data
     while ( have_rows('cycle_events') ) : the_row();
 
-      echo "true";
       $event = get_sub_field('event');
-      echo $event->title;
 
+      if($event->start_time && $event->end_time){
+        $time = $start_time." to ".$end_time;
+      }else if($event->start_time){
+        $time = $event->start_time;
+      }
+     
+      ?>
+
+          <a href="/made/deafnycEvent" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><? echo $event->title; ?> </div></div>
+        
+        <div class="flex flex-auto fb-02 height-full items-center flex-column">
+            
+                <img class="my1 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/like.svg">
+             
+                <img class="my1 type-size-subtitle height-two" src="https://visualpharm.com/assets/850/Sign%20Language%20Interpretation-595b40b85ba036ed117de2bb.svg">
+            
+        </div>
+        <div class="flex flex-column flex-auto p1 fb-1">
+            <div class="type-size-menu type-name-serif black flex-auto fb-1 line-height-4"><? echo $event->description; ?> </div>
+            <div class="trans-black type-size-menu type-name-serif italic line-height-4"><? echo $event->date; ?><? if($time): echo "/".$time ?>   </div>
+        </div>
+        
+    </a>
+
+    <?php
     endwhile;
 
     else:
