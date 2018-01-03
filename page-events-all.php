@@ -11,6 +11,8 @@
   $teachers = new WP_Query( [ 'post_type' => 'event', 'posts_per_page' => 4 ] );
 ?>
 
+<?php echo $teachers; ?>
+
 <div class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
         <div class="flex-auto fb-1 mx2">
             <div class="height-full flex flex-column justify-end"> 
