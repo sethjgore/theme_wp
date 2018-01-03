@@ -62,6 +62,8 @@
       if($event->start_time && $event->end_time){
         $time = $event->$start_time." - ".$event->end_time;
         echo $time;
+        echo $event->start_time;
+        echo $event->end_time;
       }else if($event->start_time){
         $time = date($event->start_time);
                 echo $time;
