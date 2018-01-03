@@ -12,6 +12,8 @@
 ?>
 
  <?php while( $teachers->have_posts() ) : $teachers->the_post(); ?>
+      
+
       <?php the_title(); ?>
 
       <?php // check if the repeater field has rows of data
@@ -23,7 +25,7 @@ if( have_rows('cycle_events') ):
         // display a sub field value
         $event = the_sub_field('event');
 
-        echo $event['title']
+        echo "hello";
 
     endwhile;
 
