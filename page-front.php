@@ -22,12 +22,12 @@ width: 100vw; " class="absolute width-full-viewport height-full-viewport z0 poin
         <div class="flex-auto fb-01">
     <div class="ticker-wrap bg-green-1">
         <div class="ticker px2 bg-green-1">
-          <div class="pr2 ticker__item yellow">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
-          <div class="ticker__item height-full white flex items-center px2">Sponsored by Sprint Communications</div>
-          <a class="ticker__item white px2">Whitney Museum Tour —&nbsp;ASL First, Deaf Priority, Voice Interpreted</a>
-          <a class="ticker__item white px2">ASL Cabaret —&nbsp;Something, Something Else, 10pm</a>
-          <a class="ticker__item white px2">Deaf New Years at Deaf Club of New York —&nbsp;$20 admissions</a>
-          <a class="ticker__item white px2">Sponsored by New York Deaf Theatre</a>
+          <div class="pr2 ticker__item type-size-menu yellow">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
+          <div class="ticker__item type-size-menu height-full white flex items-center px2">Sponsored by Sprint Communications</div>
+          <a class="ticker__item type-size-menu white px2">Whitney Museum Tour —&nbsp;ASL First, Deaf Priority, Voice Interpreted</a>
+          <a class="ticker__item type-size-menu white px2">ASL Cabaret —&nbsp;Something, Something Else, 10pm</a>
+          <a class="ticker__item type-size-menu white px2">Deaf New Years at Deaf Club of New York —&nbsp;$20 admissions</a>
+          <a class="ticker__item type-size-menu white px2">Sponsored by New York Deaf Theatre</a>
         </div>
     </div>
 </div>
