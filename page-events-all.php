@@ -22,18 +22,14 @@
     // loop through the rows of data
     while ( have_rows('cycle_events') ) : the_row();
 
-        // display a sub field value
-        $event = the_sub_field('event');
-
         echo "hello";
 
     endwhile;
 
-    else :
+    else:
 
     // no rows found
-
-endif; ?>
+    endif; ?>
 
 
 <?php endwhile; ?>
