@@ -11,7 +11,7 @@ $posts = new WP_Query( [ 'post_type' => 'post', 'posts_per_page' => 4 ] );
 <div id="home-hero">
     <div class="home-hero-cta">
         <p>
-            WE go again again gotcha bye bye
+            WE go again again gotcha bye bye nope
         </p>
         <a class="btn btn-primary" href="#">
             Find A Course
