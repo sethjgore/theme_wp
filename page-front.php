@@ -7,9 +7,6 @@
 <?php get_header(); ?>
 
 <div class="transition-1 flex-auto fb-2 flex flex-column">
-    <div id="wrapper" style="
-    background-size: cover; height: 100vh;
-width: 100vw; " class="absolute width-full-viewport height-full-viewport z0 pointer-events-none bg-green"></div>
 
     <a href="<?php the_field('leads_to')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
         <div class="animated fadeInDown flex flex-auto fb-02 width-full items-center justify-end">
