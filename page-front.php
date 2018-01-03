@@ -13,8 +13,8 @@
     <div class="slight-opacity flex height-full items-start p2"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-three mx2"></div>
 </div>
         <div class="flex justify-center items-center flex-auto fb-2 ">
-        <div class="flex justify-center items-center"><img class="animated fadeInOut height-full" src="http://allthebuildingsinnewyork.com/new/wp-content/uploads/2016/08/jgh_town_19greenest_low.jpg"></div>
-    </div>
+        <div style="background: url(http://allthebuildingsinnewyork.com/new/wp-content/uploads/2016/08/jgh_town_19greenest_low.jpg) center center no-repeat; background-size: contain;" class="animated fadeInOut height-full"></div>
+      </div>
         <div class="items-center animated fadeInUp  flex quote justify-around flex-auto my2 fb-04 flex">
             <img src="<?php echo THEME_IMAGES;?>/logo-green-large-black.svg" class="type-size-one height-three ml2">
                 <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"><?php the_field('attention_description') ?></div> <img class="type-size-subtitle height-two mr2" src="<?php echo THEME_IMAGES;?>/right-arrow.svg"> </div> </div>
