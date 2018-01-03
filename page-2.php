@@ -1,5 +1,5 @@
 <?php
- /* Template Name: Page 2 */
+ /* Template Name: Front Page */
 ?>
 
 <?php get_header(); ?>
