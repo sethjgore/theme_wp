@@ -15,10 +15,10 @@
         <div class="flex justify-center flex-auto fb-2 ">
         <img class="animated fadeInOut height-full" src="http://allthebuildingsinnewyork.com/new/wp-content/uploads/2016/08/jgh_town_19greenest_low.jpg">
     </div>
-        <div class="items-center animated fadeInUp  flex quote justify-around flex-auto pr2 my2 fb-04 flex">
+        <div class="items-center animated fadeInUp  flex quote justify-around flex-auto my2 fb-04 flex">
             <img src="<?php echo THEME_IMAGES;?>/logo-green-large-black.svg" class="type-size-one height-three ml2">
                 <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"><?php the_field('attention_description') ?></div> <img class="type-size-subtitle height-two mr2" src="<?php echo THEME_IMAGES;?>/right-arrow.svg"> </div> </div>
-        <div class="flex-auto fb-01">
+    <div class="flex-auto fb-02">
     <div class="ticker-wrap bg-green-1">
         <div class="ticker px2 bg-green-1">
           <div class="pr2 ticker__item type-size-menu yellow">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
