@@ -66,7 +66,7 @@
      
       ?>
 
-          <a href="/made/deafnycEvent" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><?php echo $event->title; ?> </div></div>
+          <a href="<?php echo $event->the_permalink() ?>" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><?php echo $event->title; ?> </div></div>
         
         <div class="flex flex-auto fb-02 height-full items-center flex-column">
             
