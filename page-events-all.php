@@ -29,6 +29,8 @@
         echo $time;
       }else if($event->start_time){
         $time = date($event->start_time);
+                echo $time;
+
       }
      
       ?>
