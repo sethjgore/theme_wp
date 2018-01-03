@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 
-<div><?php get_template_directory_uri(); ?>
+<div><?php echo get_template_directory_uri(); ?>
 
 <div class="transition-1 flex-auto fb-2 flex flex-column">
     <div id="wrapper" style="
