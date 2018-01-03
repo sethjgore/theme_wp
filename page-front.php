@@ -9,7 +9,7 @@
     background-size: cover; height: 100vh;
 width: 100vw; " class="absolute width-full-viewport height-full-viewport z0 pointer-events-none bg-green"></div>
 
-    <a href="/made/deafnycEventAll" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
+    <a href="<?php the_field('leads_to')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
         <div class="animated fadeInDown flex flex-auto fb-02 width-full items-center justify-end">
     <div class="slight-opacity flex height-full items-start p2"><img src="/deafnyc/logo-dhis.png" class="type-size-two height-three mx2"></div>
 </div>
@@ -17,8 +17,8 @@ width: 100vw; " class="absolute width-full-viewport height-full-viewport z0 poin
         <img class="animated fadeInOut height-full" src="http://allthebuildingsinnewyork.com/new/wp-content/uploads/2016/08/jgh_town_19greenest_low.jpg">
     </div>
         <div class="items-center animated fadeInUp  flex quote justify-around flex-auto pr2 my2 fb-04 flex">
-            <img src="/deafnyc/logo-green-large-black.svg" class="type-size-one height-three ml2">
-                <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"> Do something</div> <img class="type-size-subtitle height-two mr2" src="/deafnyc/right-arrow.svg"> </div> </div>
+            <img src="<?php the_field('large_logo')?>" class="type-size-one height-three ml2">
+                <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"><?php the_field('attention_description') ?></div> <img class="type-size-subtitle height-two mr2" src="/deafnyc/right-arrow.svg"> </div> </div>
         <div class="flex-auto fb-01">
     <div class="ticker-wrap bg-green-1">
         <div class="ticker px2 bg-green-1">
