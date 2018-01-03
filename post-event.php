@@ -17,7 +17,7 @@
         <div class="flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Don't miss out!</div>
-        <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif">Get weekly updates.</div>
+        <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif">Get wee
             </div>
         <div class="flex-auto flex items-center fb-03">
             <img src="<?php echo THEME_IMAGES;?>/right-arrow.svg" class="type-size-three width-two">
