@@ -95,7 +95,7 @@
         </div>
 
 </div>
-    <?php if(the_field('link')): ?>
+    <?php if(get_field('link')): ?>
     <a href="<?php the_field('link') ?>" class="m2 animated jackInTheBox slight-radius button bg-white p2 flex">
         <div class="flex flex-auto items-center fb-2">
             <div class="flex-auto flex items-center fb-03">
