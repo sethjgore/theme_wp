@@ -15,11 +15,11 @@ $image = $images[$number]['image'];
 <?php get_header(); ?>
 
 <div class="transition-1 flex-auto fb-2 flex flex-column">
-        <div class="animated fadeInDown relative z4 flex flex-auto fb-01 width-full items-center justify-end">
+        <div class="animated fadeInDown relative z4 flex flex-auto fb-02 width-full items-center justify-end">
 
     <div class="ticker-wrap">
         <div class="ticker px2">
-          <div class="pr2 ticker__item type-size-menu green">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
+          <div class="pr2 ticker__item type-size-menu green-1">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
           <div class="ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
         </div>
 </div>
