@@ -68,9 +68,8 @@
      
       ?>
 
-          <a href="<?php echo get_post_permalink($event->ID) ?>" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><?php echo $event->title; ?> </div></div>
-        
-        <div class="flex flex-auto fb-02 height-full items-center flex-column">
+          <a href="<?php echo get_post_permalink($event->ID) ?>" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><?php echo $event->title; ?> </div>
+           <div class="flex flex-auto fb-02 height-full items-center flex">
             
                 <?php 
                     $access = $event->access_options;
@@ -79,16 +78,15 @@
                     if( $access ): ?>
                         <?php foreach( $access as $item ): ?>
                                <div class="mb3 items-center flex flex-column">
-                            <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/<?php echo $item; ?>.svg">
+                            <img style="opacity=0.4;" class="type-size-three height-two" src="<?php echo THEME_IMAGES ?>/<?php echo $item; ?>.svg">
                         </div>
                         <?php endforeach; ?>
                     <?php endif; ?>
 
-<img class="my1 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/like.svg">
-             
-                <img class="my1 type-size-subtitle height-two" src="https://visualpharm.com/assets/850/Sign%20Language%20Interpretation-595b40b85ba036ed117de2bb.svg">
-            
         </div>
+    </div>
+        
+       
         <div class="flex flex-column flex-auto p1 fb-1">
             <div class="type-size-menu type-name-serif black flex-auto fb-1 line-height-4">
               <?php echo $event->description; ?></div>
