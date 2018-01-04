@@ -75,16 +75,11 @@
                 <?php 
                     $access = $event->access_options;
 
-                    echo print_r($access);
-
                     // check
                     if( $access ): ?>
                         <?php foreach( $access as $item ): ?>
                                <div class="mb3 items-center flex flex-column">
-                            <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/<?php echo $item['value']; ?>.svg">
-                            <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
-                                <?php echo $item['label']; ?>
-                            </div>
+                            <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/<?php echo $item; ?>.svg">
                         </div>
                         <?php endforeach; ?>
                     <?php endif; ?>
