@@ -40,12 +40,10 @@ $options = get_field_object('access_options');
 // check
 if( $options ): ?>
     <?php foreach( $options as $option ): ?>
-       
-
            <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/<?php echo $option['value']; ?>.svg">
+        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/<?php echo $option; ?>.svg">
         <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
-            <?php echo $option['label']; ?>
+            <?php echo $option; ?>
         </div>
     </div>
     <?php endforeach; ?>
