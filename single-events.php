@@ -21,7 +21,7 @@
 <a href="<?php the_field('leads_to', 'option')?>" class="animated slideInDown flex items-center text-decoration-none button bg-blue-royal bold button-pill px2 white"><img class="pl1 height-one type-size-subtitle" src="<?php echo THEME_IMAGES ?>/right-arrow.svg" style="transform: rotate(180deg);">Back</a>
         </div>
 
-        <div class="flex flex-auto fb-2">
+        <div class="width-full flex flex-auto fb-2">
             <div class="width-full flex-column flex flex-auto fb-1 p2"><div class="type-size-two mt2 type-name-serif line-height-1 green-1 bold mb4">    <?php the_field('title') ?></div>
             <div class="flex flex-auto py2 fb-1">
             <div class="type-size-paragraph type-name-serif black flex-auto fb-1 line-height-4">
