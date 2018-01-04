@@ -19,8 +19,8 @@ $image = $images[$number]['image'];
 
     <div class="ticker-wrap">
         <div class="ticker px2">
-          <div class="pr2 ticker__item type-size-menu green-1">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
-          <div class="ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
+          <div class="pr2 ticker__item type-size-menu type-name-sans green-1">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
+          <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
         </div>
 </div>
     <div class="slight-opacity flex height-full items-start p2"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-three mx2"></div>
