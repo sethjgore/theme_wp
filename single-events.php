@@ -112,7 +112,7 @@
     </div>
   
   </div>
-
+<div class="flex-auto fb-02 type-size-menu">
   
 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
@@ -130,7 +130,7 @@
     <?php the_field('contact_via_email') ?>
     <?php the_field('contact_message') ?>
     <?php the_field('rsvp_link') ?>
-
+</div>
 <?php endwhile; endif;?>
 
 <?php get_footer(); ?>
