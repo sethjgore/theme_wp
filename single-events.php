@@ -172,7 +172,7 @@ if( $options ): ?>
     </div>
   
   </div>
-<div class="hidden">
+<div class="hide">
     <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
 </div>
 
