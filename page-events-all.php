@@ -72,7 +72,23 @@
         
         <div class="flex flex-auto fb-02 height-full items-center flex-column">
             
-                <img class="my1 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/like.svg">
+                <?php 
+                    $options = $event->access_options;
+
+
+                    // check
+                    if( $options ): ?>
+                        <?php foreach( $options as $option ): ?>
+                               <div class="mb3 items-center flex flex-column">
+                            <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/<?php echo $option['value']; ?>.svg">
+                            <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
+                                <?php echo $option['label']; ?>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+
+<img class="my1 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/like.svg">
              
                 <img class="my1 type-size-subtitle height-two" src="https://visualpharm.com/assets/850/Sign%20Language%20Interpretation-595b40b85ba036ed117de2bb.svg">
             
