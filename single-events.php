@@ -93,7 +93,9 @@
     <div class="type-size-subtitle white line-height-2 type-name-serif"> <?php echo $time; ?></div>
 
 </div>
-   
+    <?php $method = get_field('method_of_rsvp'); 
+
+    echo $method;?>
     <?php if(get_field('link')): ?>
     <a href="<?php the_field('link') ?>" class="m2 animated jackInTheBox slight-radius button bg-white p2 flex">
         <div class="flex flex-auto items-center fb-2">
