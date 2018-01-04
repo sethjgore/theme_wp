@@ -120,7 +120,7 @@
       $sponsor = get_sub_field('sponsor');
      
       ?>
-      <div class="center line-height-2 type-size-paragraph type-name-sans trans-blac pt1"><?php echo $sponsor->sponsor_name ?></div>
+      <div class="center line-height-2 type-size-paragraph type-name-sans trans-black pt1"><?php echo $sponsor->sponsor_name ?></div>
 
       <?php endwhile;?> </div><?php endif;?>
         </div>
