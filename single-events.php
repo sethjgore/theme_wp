@@ -17,8 +17,8 @@
         <div class="bg-white animated fadeIn fb-2 flex items-end flex-auto flex-column">
         <div class="width-full px2 bg-black flex justify-between items-center flex-auto fb-02">
 
-<a href="/made/deafnyc"><img src="<?php echo THEME_IMAGES ?>/logo-green-small.svg" class="px2 type-size-one height-one mt2"></a>
-<a href="/made/deafnycEventAll" class="animated slideInDown flex items-center text-decoration-none button bg-blue-royal bold button-pill px2 white"><img class="pl1 height-one type-size-subtitle" src="<?php echo THEME_IMAGES ?>/right-arrow.svg" style="transform: rotate(180deg);">Back</a>
+<a href="<?php echo home_url(); ?>"><img src="<?php echo THEME_IMAGES ?>/logo-green-small.svg" class="px2 type-size-one height-one mt2"></a>
+<a href="<?php the_field('leads_to', 'option')?>" class="animated slideInDown flex items-center text-decoration-none button bg-blue-royal bold button-pill px2 white"><img class="pl1 height-one type-size-subtitle" src="<?php echo THEME_IMAGES ?>/right-arrow.svg" style="transform: rotate(180deg);">Back</a>
         </div>
 
         <div class="flex flex-auto fb-2">
@@ -125,7 +125,7 @@
         </div>
     </div> 
     <?php elseif($method == 'Website'): ?>
-        <a href="<?php the_field('rsvp_link')?>"  class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
+        <a href="<?php the_field('rsvp_link')?>"  class="text-decoration-none m2 animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
@@ -137,7 +137,7 @@
     <?php endif; ?>
 
     <?php if(get_field('link')): ?>
-    <a href="<?php the_field('link') ?>" class="m2 animated jackInTheBox slight-radius button bg-white p2 flex">
+    <a href="<?php the_field('link') ?>" class="m2 animated jackInTheBox slight-radius button bg-white p2 flex text-decoration-none">
         <div class="flex flex-auto items-center fb-2">
             <div class="flex-auto flex items-center fb-03">
                 <img src="<?php echo THEME_IMAGES ?>/info.svg" class="type-size-three width-two">
