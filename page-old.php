@@ -1,15 +1,10 @@
 <?php
-
 get_header();
-$featured_course_id = 8;
-$teachers = new WP_Query( [ 'post_type' => 'teacher', 'posts_per_page' => 4 ] );
-$courses = new WP_Query( [ 'post_type' => 'download', 'posts_per_page' => 2 ] );
-$posts = new WP_Query( [ 'post_type' => 'post', 'posts_per_page' => 4 ] );
-
 ?>
-<script>
-    console.log(<?php echo $teachers; ?>)
-</script>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    Hello!
+<?endwhile; endif;?>
 
 <div id="home-hero">
     <div class="home-hero-cta">

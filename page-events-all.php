@@ -10,7 +10,7 @@
 
 <?php
 
-  $teachers = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
+  $cycle = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
 ?>
 
 <div class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
@@ -48,7 +48,7 @@
         </div></a></div>
        
 
-  <?php while( $teachers->have_posts() ) : $teachers->the_post(); ?>
+  <?php while( $cycle->have_posts() ) : $cycle->the_post(); ?>
       
 
       <?php // check if the repeater field has rows of data
@@ -104,7 +104,7 @@
             </div>
             <div>
             <div class="center pt4 line-height-2 type-name-sans trans-black type-size-paragraph bold">
-                Presented by DHIS.
+                Presented by DHIS
             </div>
 
       <?php // check if the repeater field has rows of data

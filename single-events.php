@@ -4,9 +4,9 @@
 
 <?php get_header(); ?>
 
-<?php
-  $teachers = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
-?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    Hello!
+<?endwhile; endif;?>
 
 <div class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
         <div class="flex-auto fb-1 mx2">
