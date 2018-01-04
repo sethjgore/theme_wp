@@ -27,7 +27,7 @@ $image = $images[$number]['image'];
 </div>
     <a href="<?php the_field('leads_to', 'option')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
 
-        <div class="flex justify-center items-center flex-auto fb-2 ">
+        <div class="flex justify-center items-center flex-auto fb-2 px3">
         <div style="background: url(<?php echo $image['url'];?>) center center no-repeat; background-size: contain;" class="flex-auto fb-1 animated fadeIn height-full"></div>
       </div>
         <div class="items-center animated fadeInUp  flex quote justify-around flex-auto my2 fb-04 flex">
