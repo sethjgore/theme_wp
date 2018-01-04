@@ -40,7 +40,7 @@
         </div>
         <div style="overflow-y: scroll !important; -webkit-overflow-scrolling: touch !important;" class="animated fadeIn fb-2 overflow-auto items-end flex-auto flex-column fb-1">
             <div class="p2 type-name-serif type-size subtitle flex black-trans">
-                <a href="http://dhisnyc.com" class="flex-auto fb-02 items-center flex justify-end text-decoration-none"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-subtitle height-three mx2">
+                <a href="<?php echo the_field('dhis_logo_link', 'option')" class="flex-auto fb-02 items-center flex justify-end text-decoration-none"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-subtitle height-three mx2">
                 <div class="flex items-center">
             <img src="<?php echo THEME_IMAGES;?>/right-arrow.svg" class="type-size-paragraph width-two">
         </div></a></div>
@@ -104,13 +104,11 @@
             <div class="center pt4 line-height-2 type-name-sans trans-black type-size-paragraph bold">
                 Presented by DHIS. <br>
                 
-
-      NNOOOPEEE
     <?php 
 
-    $group = the_field('page_events', 'option'); 
+    $group = get_field('page_events', 'option'); 
 
-    if($group): ?> helllllloooooo <?php endif; ?>
+    if($group): ?> <?php endif; ?>
       
 
       <?php // check if the repeater field has rows of data
