@@ -7,7 +7,13 @@
         $time = get_field('start_time');
       }
 
+$prev->link = get_permalink(get_adjacent_post(false,'',false));
 
+$prev->ID = get_adjacent_post(false,'',false);
+
+$next->link = get_permalink(get_adjacent_post(false,'',true));
+
+$next->ID = get_adjacent_post(false,'',true);
 
 ?>
 
@@ -60,9 +66,9 @@ if( $options ): ?>
        
          <div class="animated slideInUp flex fb-03 flex-auto width-full">
             <div class="flex-auto fb-1 bg-green-1 white type-name-serif type-size-subtitle line-height-1 p2 bold">More Events</div>
-<a href="<?php echo $prev->link; ?> 
+<a href="<?php if($prev->link){echo $prev->link;} ?> 
 " class="text-decoration-none button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
-    <div class="type-size-paragraph green-1 bold line-height-2 type-name-serif"><?php echo $ prev->ID; ?></div>
+    <div class="type-size-paragraph green-1 bold line-height-2 type-name-serif"></div>
     
 
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
