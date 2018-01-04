@@ -8,7 +8,7 @@
 
 <div class="transition-1 flex-auto fb-2 flex flex-column">
 
-    <a href="<?php the_field('leads_to')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
+    <a href="<?php the_field('leads_to', 'option')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
         <div class="animated fadeInDown relative z4 flex flex-auto fb-02 width-full items-center justify-end">
     <div class="slight-opacity flex height-full items-start p2"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-three mx2"></div>
 </div>
