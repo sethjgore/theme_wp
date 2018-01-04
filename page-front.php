@@ -33,7 +33,7 @@ $image = $images[$number]['image'];
         <div class="flex justify-center items-center flex-auto fb-2 px3">
         <div style="background: url(<?php echo $image['url'];?>) center center no-repeat; background-size: contain;" class="flex-auto fb-1 animated fadeIn height-full"></div>
       </div>
-        <div class="items-center animated fadeInUp  flex quote justify-around flex-auto my2 fb-04 flex">
+        <div class="items-center animated fadeInUp  flex quote justify-around flex-auto fb-05 flex">
             <img src="<?php echo THEME_IMAGES;?>/logo-green-large-black.svg" class="type-size-one height-three ml2">
                 <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"><?php the_field('attention_description') ?></div> <img class="type-size-subtitle height-two mr2" src="<?php echo THEME_IMAGES;?>/right-arrow.svg"> </div> </div>
 
