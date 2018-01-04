@@ -89,8 +89,8 @@
     <div class="type-size-subtitle white line-height-2 type-name-serif">99 Gansevoort St, New York, NY 10014</div>
 </div>
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">When?</div>
-    <div class="type-size-subtitle white line-height-2 type-name-serif"><?php the_field('date')</div>
-    <div class="type-size-subtitle white line-height-2 type-name-serif"> <?php echo $time; ></div>
+    <div class="type-size-subtitle white line-height-2 type-name-serif"><?php the_field('date')?></div>
+    <div class="type-size-subtitle white line-height-2 type-name-serif"> <?php echo $time; ?></div>
 
 </div>
             <div class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
