@@ -108,7 +108,7 @@
       
 
       <?php // check if the repeater field has rows of data
-    if( $options['event'] ): ?>
+    if( $options['sponsors'] ): ?>
 
     <div class="flex justify-around items-center"> HELLO
 
