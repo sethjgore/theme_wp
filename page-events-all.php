@@ -108,7 +108,7 @@
       
     <?php 
 
-    $group = get_field('page_events'); 
+    $group = the_field('page_events'); 
 
     if($group): ?> helllllloooooo <?php endif; ?>
       
