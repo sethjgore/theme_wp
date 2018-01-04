@@ -1,5 +1,11 @@
 <?php
  define( 'THEME_IMAGES', get_template_directory_uri().'/images' );
+
+ if(get_field('start_time') && get_field('end_time')){
+        $time = get_field('start_time')." - ".get_field('end_time');
+      }else if(get_field('start_time')){
+        $time = get_field('start_time');
+      }
 ?>
 
 <?php get_header(); ?>
@@ -16,9 +22,11 @@
         </div>
 
         <div class="flex flex-auto fb-2">
-            <div class="width-full flex-column flex flex-auto fb-1 p2"><div class="type-size-two mt2 type-name-serif line-height-1 green-1 bold mb4">Whitney Museum Tour</div>
+            <div class="width-full flex-column flex flex-auto fb-1 p2"><div class="type-size-two mt2 type-name-serif line-height-1 green-1 bold mb4">    <?php the_field('title') ?></div>
             <div class="flex flex-auto py2 fb-1">
-            <div class="type-size-paragraph type-name-serif black flex-auto fb-1 line-height-4">Experience the Whitney's world renowned collection of modern and contemporary American art in American Sign Language. Join us for a free tour in ASL of Jimmie Durham: At the Center of the World led by an expert Deaf educator and accompanied by a voice interpreter. The tour begins at 5 pm, with a pre-tour wine and cheese reception from 4–5 pm in the Laurie M. Tisch Education Center. Admission to the tour and reception is free with RSVP. Due to a limited capacity, we do not allow ASL students to</div>
+            <div class="type-size-paragraph type-name-serif black flex-auto fb-1 line-height-4">
+                    <?php the_field('description') ?>
+            </div>
             <div class="flex-auto fb-02"></div>
         </div>
             </div>
@@ -82,7 +90,7 @@
 </div>
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">When?</div>
     <div class="type-size-subtitle white line-height-2 type-name-serif">May 12</div>
-    <div class="type-size-subtitle white line-height-2 type-name-serif">   4pm to 6pm</div>
+    <div class="type-size-subtitle white line-height-2 type-name-serif"> <? echo $time; ></div>
 
 </div>
             <div class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
@@ -113,15 +121,12 @@
   
   </div>
 <div class="flex-auto flex-column flex fb-03 type-size-menu">
-  
+
 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
-    <?php the_field('title') ?>
 
-    <?php the_field('description') ?>
-
-    <?php the_field('start_time') ?>
-    <?php the_field('end_time') ?>
+   
+    
     <?php the_field('date') ?>
     <?php the_field('location') ?>
     <?php get_field('access_options') ?>
