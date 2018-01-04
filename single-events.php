@@ -7,13 +7,8 @@
         $time = get_field('start_time');
       }
 
-$prev->link = get_permalink(get_adjacent_post(false,'',false));
 
-$prev->ID = get_adjacent_post(false,'',false);
 
-$next->link = get_permalink(get_adjacent_post(false,'',true));
-
-$next->ID = get_adjacent_post(false,'',true);
 ?>
 
 <?php get_header(); ?>
