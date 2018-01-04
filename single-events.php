@@ -32,33 +32,26 @@
             </div>
             <div class="flex pt3 flex-auto px2 fb-02 height-full items-center flex-column">
             
-                <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/like.svg">
+
+<?php 
+$options = get_field_object('access_options');
+
+
+// check
+if( $options ): ?>
+    <?php foreach( $options as $option ): ?>
+       
+
+           <div class="mb3 items-center flex flex-column">
+        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/<?php echo $option['value']; ?>.svg">
         <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
-            Deaf Priority
+            <?php echo $option['label']; ?>
         </div>
     </div>
-             
-                <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="https://visualpharm.com/assets/850/Sign%20Language%20Interpretation-595b40b85ba036ed117de2bb.svg">
-        <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
-            Voice Interpreted
-        </div>
-    </div>
-             
-                <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/asl-hand.jpg">
-        <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
-            ASL First
-        </div>
-    </div>
-             
-                <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/cc.svg">
-        <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
-            Captioned
-        </div>
-    </div>
+    <?php endforeach; ?>
+<?php endif; ?>
+
+ 
             
         </div>
         </div>
@@ -158,9 +151,7 @@
 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
 
-    <?php get_field('access_options') ?>
     <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
-    <?php the_field('method_of_rsvp') ?>
 </div>
 <?php endwhile; endif;?>
 
