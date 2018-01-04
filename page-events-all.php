@@ -110,7 +110,7 @@
       <?php // check if the repeater field has rows of data
     if( $options['sponsors'] ): ?>
     
-    <div class="flex center justify-center items-center trans-black type-size-paragraph">Sponsored by</div>
+    <div class="flex center justify-center items-center py2 trans-black type-name-sans type-size-paragraph">Sponsored by</div>
     <div class="flex justify-around items-center">
     
     <?php // loop through the rows of data
