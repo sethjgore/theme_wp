@@ -75,6 +75,7 @@
                 <?php 
                     $access = $event->access_options;
 
+                    echo $access;
 
                     // check
                     if( $access ): ?>
