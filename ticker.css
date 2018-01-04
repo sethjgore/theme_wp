@@ -29,6 +29,7 @@
   }
 
   100% {
+    opacity: 0;
     -webkit-transform: translate3d(-200%, 0, 0);
     transform: translate3d(-200%, 0, 0);
   }
