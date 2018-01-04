@@ -17,7 +17,7 @@
 
     <?php the_field('link') ?>
     <?php get_field('access_options') ?>
-    <?php the_field('graphic')['url'] ?>
+    <?php $graphic-> get_field('graphic') echo $graphic['url'] ?>
     <?php the_field('method_of_rsvp') ?>
     <?php the_field('contact_via_email') ?>
     <?php the_field('contact_message') ?>
