@@ -6,6 +6,10 @@
       }else if(get_field('start_time')){
         $time = get_field('start_time');
       }
+
+$prev = get_permalink(get_adjacent_post(false,'',false));
+
+$next = get_permalink(get_adjacent_post(false,'',true));
 ?>
 
 <?php get_header(); ?>
@@ -57,10 +61,10 @@ if( $options ): ?>
        
          <div class="animated slideInUp flex fb-03 flex-auto width-full">
             <div class="flex-auto fb-1 bg-green-1 white type-name-serif type-size-subtitle line-height-1 p2 bold">More Events</div>
-<a href="" class="text-decoration-none button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
+<a href="<?php echo $prev; ?> 
+" class="text-decoration-none button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
     <div class="type-size-paragraph green-1 bold line-height-2 type-name-serif">NYDT + ASL Cabaret</div>
-    <?php get_previous_posts_link( ); ?> 
-
+    
 
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
     Dec 12 2017</div>
