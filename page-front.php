@@ -18,7 +18,8 @@ $image = $images[$number]['image'];
         <div class="animated fadeInDown relative z4 flex flex-auto fb-02 width-full items-center justify-end">
 
     <div class="ticker-wrap">
-        <div class="ticker px2">
+        <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;
+          animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;">
           <div class="pr2 ticker__item type-size-menu type-name-sans green-1">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
