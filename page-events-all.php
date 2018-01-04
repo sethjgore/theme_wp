@@ -108,7 +108,7 @@
       NNOOOPEEE
     <?php 
 
-    $group = the_field('page_events'); 
+    $group = the_field('page_events', 'option'); 
 
     if($group): ?> helllllloooooo <?php endif; ?>
       
