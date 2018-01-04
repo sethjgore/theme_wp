@@ -8,7 +8,7 @@
   $number = array_rand($images);
 
   print_r($number);
-  print_r($images[1])
+  print_r($images[$number])
 
 ?>
 
