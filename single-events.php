@@ -3,9 +3,15 @@
 ?>
 
 <?php get_header(); ?>
-YO
 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    Hello!
+    
+    <?php the_field('title') ?>
+
+    <?php the_field('description') ?>
+
+    <?php the_field('start_time') ?>
+    <?php the_field('end_time') ?>
+    <?php the_field('graphic') ?>
 
 <?php endwhile; endif;?>
 
