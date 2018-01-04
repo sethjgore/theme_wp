@@ -105,7 +105,7 @@
             <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
         </div>
     </div> 
-    <a href="<?php the_field('rsvp_link') ?>"  class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
+    <a href="<?php the_field('rsvp_link') ?>"  class="m2 text-decoration-none animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
