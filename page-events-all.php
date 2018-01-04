@@ -102,7 +102,26 @@
             </div>
             <div>
             <div class="center pt4 line-height-2 type-name-sans trans-black type-size-paragraph bold">
-                Presented by DHIS. <br> Sponsored by Sprint and NYDT. 
+                Presented by DHIS. <br>
+                
+
+      
+
+      <?php // check if the repeater field has rows of data
+    if( have_rows('event_page_ads') ): ?>
+
+    <div class="flex justify-around items-center">
+
+    <?php // loop through the rows of data
+    while ( have_rows('event_page_ads') ) : the_row();
+
+
+      $sponsor = get_sub_field('sponsor');
+     
+      ?>
+      <div class="center type-size-paragraph bold type-name-sans trans-black"><?php echo $sponsor->sponsor_name ?></div>
+
+      <?php endwhile;?> </div><?php endif;?>
             </div>
         </div>
         </div>
