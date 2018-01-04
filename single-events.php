@@ -107,6 +107,7 @@
                 <img src="/deafnyc/right-arrow.svg" class="type-size-three width-two">
         </div>
     </a>
+<?php endif; ?>
         </div>
     </div>
   
