@@ -95,7 +95,7 @@
 </div>
     <?php $method = get_field('method_of_rsvp');
 
-    if($method != 'Both'): ?>
+    if($method == 'Both'): ?>
     <div class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
@@ -114,7 +114,7 @@
             <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
         </div>
     </a>
-    <?php elseif($method != 'Email'):?>
+    <?php elseif($method == 'Email'):?>
     <div class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
@@ -124,7 +124,7 @@
             <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
         </div>
     </div> 
-    <?php elseif($method != 'Website'):?>
+    <?php elseif($method == 'Website'):?>
         <a href="<?php the_field('rsvp_link')?>"  class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
