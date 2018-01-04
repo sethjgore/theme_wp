@@ -7,6 +7,13 @@
         $time = get_field('start_time');
       }
 
+function timed($start, $end){
+    if($start && $end){
+        echo $start." - ".$end;
+      }else if($start){
+        echo $start;
+      }
+}
 
 $prev->obj = get_adjacent_post(false,'',false);
 
@@ -70,14 +77,14 @@ if( $options ): ?>
 <a href="<?php if($prev->link){echo $prev->link;} ?> 
 " class="text-decoration-none button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
     <div class="type-size-paragraph green-1 bold line-height-2 type-name-serif">
-        <?php if($prev->obj->ID){echo $prev->obj->ID ;} ?>
+        <?php the_field('title', $prev->obj->ID) ?>
     </div>
     
 
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
-    Dec 12 2017</div>
+    <?php the_field('date', $prev->obj->ID) ?></div>
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
-    1:00pm - 2:30pm</div>
+    <?php $start = the_field('start_time', $prev->obj->ID);  $end = the_field('start_time', $prev->obj->ID); timed($start, $end); ?></div>
 
 </a>
          <div class="button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
