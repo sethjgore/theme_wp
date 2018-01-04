@@ -86,7 +86,7 @@
     </div>
         <div class="flex-auto fb-1" style="background: url(http://img.mensjournal.com/article-leads-horizontal/screen-shot-2017-03-29-at-13810-pm-a887f892-960b-4efe-8de0-fa2501d9134f.png) center center; background-size: cover;">
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">Where?</div>
-    <div class="type-size-subtitle white line-height-2 type-name-serif">99 Gansevoort St, New York, NY 10014</div>
+    <div class="type-size-subtitle white line-height-2 type-name-serif"><?php $location = get_field('location'); if($location){ echo $location['address'];} ?></div>
 </div>
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">When?</div>
     <div class="type-size-subtitle white line-height-2 type-name-serif"><?php the_field('date')?></div>
@@ -125,10 +125,6 @@
 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
 
-   
-    
-    <?php the_field('date') ?>
-    <?php the_field('location') ?>
     <?php get_field('access_options') ?>
     <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
     <?php the_field('method_of_rsvp') ?>
