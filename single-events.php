@@ -93,9 +93,49 @@
     <div class="type-size-subtitle white line-height-2 type-name-serif"> <?php echo $time; ?></div>
 
 </div>
-    <?php $method = get_field('method_of_rsvp'); 
+    <?php $method = get_field('method_of_rsvp');
 
-    echo $method;?>
+    if($method == 'Both'): ?>
+    <div class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div class="flex-auto fb-2">
+        <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
+        <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
+            </div>
+        <div class="flex-auto flex items-center fb-03">
+            <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
+        </div>
+    </div> 
+    <a href="<?php the_field('rsvp_link') ?>"  class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div class="flex-auto fb-2">
+        <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
+        <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
+            </div>
+        <div class="flex-auto flex items-center fb-03">
+            <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
+        </div>
+    </a>
+    <?php elseif($method == 'Email'):?>
+    <div class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div class="flex-auto fb-2">
+        <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
+        <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
+            </div>
+        <div class="flex-auto flex items-center fb-03">
+            <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
+        </div>
+    </div> 
+    <?php elseif($method == 'Website'): ?>
+        <a href="<?php the_field('rsvp_link')?>"  class="m2 animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div class="flex-auto fb-2">
+        <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
+        <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
+            </div>
+        <div class="flex-auto flex items-center fb-03">
+            <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
+        </div>
+    </a> 
+    <?php endif; ?>
+
     <?php if(get_field('link')): ?>
     <a href="<?php the_field('link') ?>" class="m2 animated jackInTheBox slight-radius button bg-white p2 flex">
         <div class="flex flex-auto items-center fb-2">
