@@ -34,7 +34,7 @@
             
 
 <?php 
-$options = get_field_object('access_options');
+$options = get_field('access_options');
 
 
 // check
