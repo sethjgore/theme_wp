@@ -11,8 +11,8 @@
         <div class="bg-white animated fadeIn fb-2 flex items-end flex-auto flex-column">
         <div class="width-full px2 bg-black flex justify-between items-center flex-auto fb-02">
 
-<a href="/made/deafnyc"><img src="<?php echo THEME_IMAGES ?> /logo-green-small.svg" class="px2 type-size-one height-one mt2"></a>
-<a href="/made/deafnycEventAll" class="animated slideInDown flex items-center text-decoration-none button bg-blue-royal bold button-pill px2 white"><img class="pl1 height-one type-size-subtitle" src="<?php echo THEME_IMAGES ?> /right-arrow.svg" style="transform: rotate(180deg);">Back</a>
+<a href="/made/deafnyc"><img src="<?php echo THEME_IMAGES ?>/logo-green-small.svg" class="px2 type-size-one height-one mt2"></a>
+<a href="/made/deafnycEventAll" class="animated slideInDown flex items-center text-decoration-none button bg-blue-royal bold button-pill px2 white"><img class="pl1 height-one type-size-subtitle" src="<?php echo THEME_IMAGES ?>/right-arrow.svg" style="transform: rotate(180deg);">Back</a>
         </div>
 
         <div class="flex flex-auto fb-2">
@@ -25,7 +25,7 @@
             <div class="flex pt3 flex-auto px2 fb-02 height-full items-center flex-column">
             
                 <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?> /like.svg">
+        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/like.svg">
         <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
             Deaf Priority
         </div>
@@ -39,14 +39,14 @@
     </div>
              
                 <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?> /asl-hand.jpg">
+        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/asl-hand.jpg">
         <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
             ASL First
         </div>
     </div>
              
                 <div class="mb3 items-center flex flex-column">
-        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?> /cc.svg">
+        <img class="type-size-three height-three" src="<?php echo THEME_IMAGES ?>/cc.svg">
         <div class="line-height-2 pt2 center type-size-menu bold gray type-name-serif">
             Captioned
         </div>
@@ -91,7 +91,7 @@
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif">access@whitney.org</div>
             </div>
         <div class="flex-auto flex items-center fb-03">
-            <img src="<?php echo THEME_IMAGES ?> /right-arrow.svg" class="type-size-three width-two">
+            <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
         </div>
 
 </div>
@@ -99,12 +99,12 @@
     <a href="<?php the_field('link') ?>" class="m2 animated jackInTheBox slight-radius button bg-white p2 flex">
         <div class="flex flex-auto items-center fb-2">
             <div class="flex-auto flex items-center fb-03">
-                <img src="<?php echo THEME_IMAGES ?> /info.svg" class="type-size-three width-two">
+                <img src="<?php echo THEME_IMAGES ?>/info.svg" class="type-size-three width-two">
             </div>
             <div class="line-height-2 type-name-serif type-size-paragraph bold black">More Information</div>
                 </div>
             <div class="flex-auto flex items-center fb-03">
-                <img src="<?php echo THEME_IMAGES ?> /right-arrow.svg" class="type-size-three width-two">
+                <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
         </div>
     </a>
 <?php endif; ?>
