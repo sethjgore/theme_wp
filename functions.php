@@ -52,6 +52,13 @@ class DSBTheme {
 function dsb_theme_init() {
 	return $DSBTheme = DSBTheme::instance();
 }
+
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page();
+    
+}
+
 dsb_theme_init();
 
 ?>
