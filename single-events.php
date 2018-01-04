@@ -112,7 +112,7 @@
     </div>
   
   </div>
-<div class="flex-auto fb-02 type-size-menu">
+<div class="flex-auto fb-03 type-size-menu">
   
 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
