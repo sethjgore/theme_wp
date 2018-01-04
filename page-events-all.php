@@ -110,7 +110,7 @@
       <?php // check if the repeater field has rows of data
     if( $options['sponsors'] ): ?>
     
-    <div class="flex center justify-center items-center py2 trans-black type-name-sans type-size-paragraph">Sponsored by</div>
+    <div class="flex center justify-center items-center pt3 trans-black bold type-name-sans type-size-paragraph">Sponsored by</div>
     <div class="flex flex-column justify-around items-center">
     
     <?php // loop through the rows of data
@@ -120,7 +120,7 @@
       $sponsor = get_sub_field('sponsor');
      
       ?>
-      <div class="center type-size-paragraph bold type-name-sans trans-black"><?php echo $sponsor->sponsor_name ?></div>
+      <div class="center type-size-paragraph type-name-sans trans-blac pt1"><?php echo $sponsor->sponsor_name ?></div>
 
       <?php endwhile;?> </div><?php endif;?>
             </div>
