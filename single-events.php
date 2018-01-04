@@ -92,7 +92,7 @@ if( $options ): ?>
 </a>
 <?php endif; ?>
     <?php if($prev->obj): ?>
-    <a href="<?php if($prev->link){echo $prev->link;} ?>" class="button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
+    <a href="<?php if($prev->link){echo $prev->link;} ?>" class="text-decoration-none button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
     <div class="type-size-paragraph green-1 bold line-height-2 type-name-serif"> <?php the_field('title', $prev->obj->ID) ?></div>
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
     <?php the_field('date', $prev->obj->ID) ?></div>
