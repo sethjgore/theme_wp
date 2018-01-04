@@ -21,7 +21,7 @@ $prev->link = get_permalink($prev->obj);
 
 $next->obj = get_adjacent_post(false,'',true);
 
-$next->link = get_permalink($prev->obj);
+$next->link = get_permalink($next->obj);
 
 ?>
 
