@@ -5,7 +5,7 @@
     visibility: visible;
   }
 
-  95%:{
+  99%:{
     opacity: 1;
   }
   100% {
@@ -22,7 +22,7 @@
     visibility: visible;
   }
 
-  95%:{
+  99%:{
     opacity: 1;
   }
 
@@ -59,8 +59,8 @@
           animation-timing-function: linear;
  -webkit-animation-name: ticker;
          animation-name: ticker;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
 
 }
 
