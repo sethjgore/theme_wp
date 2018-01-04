@@ -5,9 +5,13 @@
     visibility: visible;
   }
 
+  95%:{
+    opacity: 1;
+  }
   100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(-130%, 0, 0);
+    transform: translate3d(-130%, 0, 0);
   }
 }
 
@@ -18,9 +22,14 @@
     visibility: visible;
   }
 
+  95%:{
+    opacity: 1;
+  }
+
   100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(-130%, 0, 0);
+    transform: translate3d(-130%, 0, 0);
   }
 }
 
@@ -50,9 +59,9 @@
           animation-timing-function: linear;
  -webkit-animation-name: ticker;
          animation-name: ticker;
-  -webkit-animation-duration: 45s;
-          animation-duration: 45s;
-   
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+
 }
 
 
