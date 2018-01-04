@@ -84,7 +84,7 @@ if( $options ): ?>
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
     <?php the_field('date', $prev->obj->ID) ?></div>
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
-    <?php $start = the_field('start_time', $prev->obj->ID);  $end = the_field('start_time', $prev->obj->ID); timed($start, $end); ?></div>
+    <?php $start = get_field('start_time', $prev->obj->ID);  $end = get_field('start_time', $prev->obj->ID); timed($start, $end); ?></div>
 
 </a>
          <div class="button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
