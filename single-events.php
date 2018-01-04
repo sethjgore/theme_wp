@@ -35,7 +35,7 @@ $next->link = get_permalink($next->obj);
         <div class="width-full px2 bg-black flex justify-between items-center flex-auto fb-02">
 
 <a href="<?php echo home_url(); ?>"><img src="<?php echo THEME_IMAGES ?>/logo-green-small.svg" class="px2 type-size-one height-one mt2"></a>
-<a href="<?php the_field('leads_to', 'option')?>" class="animated slideInDown flex items-center text-decoration-none button bg-blue-royal bold button-pill px2 white"><img class="pl1 height-one type-size-subtitle" src="<?php echo THEME_IMAGES ?>/right-arrow.svg" style="transform: rotate(180deg);">Back</a>
+<a href="<?php the_field('leads_to', 'option')?>" class="animated slideInDown flex items-center text-decoration-none button bg-blue-royal type-size-title type-name-sans button-pill px2 white"><img class="pl1 height-one type-size-subtitle" src="<?php echo THEME_IMAGES ?>/right-arrow.svg" style="transform: rotate(180deg);">Back</a>
         </div>
 
         <div class="width-full flex flex-auto fb-2">
