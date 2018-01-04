@@ -15,20 +15,18 @@ $image = $images[$number]['image'];
 <?php get_header(); ?>
 
 <div class="transition-1 flex-auto fb-2 flex flex-column">
+        <div class="animated fadeInDown relative z4 flex flex-auto fb-01 width-full items-center justify-end">
 
-    <a href="<?php the_field('leads_to', 'option')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
-        <div class="animated fadeInDown relative z4 flex flex-auto fb-02 width-full items-center justify-end">
-
-              <div class="flex-auto fb-02">
     <div class="ticker-wrap">
         <div class="ticker px2">
           <div class="pr2 ticker__item type-size-menu green">We must always take sides. Neutrality helps the oppressor never the victim.<span class="gray bold nowrap"> - Elie Wiese</span></div>
           <div class="ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
         </div>
-    </div>
 </div>
     <div class="slight-opacity flex height-full items-start p2"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-three mx2"></div>
 </div>
+    <a href="<?php the_field('leads_to', 'option')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
+
         <div class="flex justify-center items-center flex-auto fb-2 ">
         <div style="background: url(<?php echo $image['url'];?>) center center no-repeat; background-size: contain;" class="flex-auto fb-1 animated fadeIn height-full"></div>
       </div>
