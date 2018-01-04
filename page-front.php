@@ -8,6 +8,8 @@
 $number = array_rand($images);
 $image = $images[$number];
 
+print_r($image);
+
 ?>
 
 <?php get_header(); ?>
