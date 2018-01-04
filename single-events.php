@@ -172,13 +172,8 @@ if( $options ): ?>
     </div>
   
   </div>
-<div class="flex-auto flex-column flex fb-03 type-size-menu">
-
-<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    
-
+<div class="hidden">
     <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
 </div>
-<?php endwhile; endif;?>
 
 <?php get_footer(); ?>
