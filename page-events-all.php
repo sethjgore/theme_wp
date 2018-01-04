@@ -105,10 +105,9 @@
                 Presented by DHIS. <br>
                 
 
+   
       
-    <?php $group = get_field('page_events') 
 
-    if($group): ?> helllllloooooo <?php endif; ?>
       <?php // check if the repeater field has rows of data
     if( have_rows('event_page_ads') ): ?>
 
