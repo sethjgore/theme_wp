@@ -78,7 +78,7 @@
                     if( $access ): ?>
                         <?php foreach( $access as $item ): ?>
                                <div class="mb3 items-center flex flex-column">
-                            <img style="opacity=0.4;" class="type-size-three height-two" src="<?php echo THEME_IMAGES ?>/<?php echo $item; ?>.svg">
+                            <img style="opacity=0.4;" class="type-size-three height-two pr2" src="<?php echo THEME_IMAGES ?>/<?php echo $item; ?>.svg">
                         </div>
                         <?php endforeach; ?>
                     <?php endif; ?>
