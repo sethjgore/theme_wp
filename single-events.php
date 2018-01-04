@@ -11,7 +11,17 @@
 
     <?php the_field('start_time') ?>
     <?php the_field('end_time') ?>
+    <?php the_field('date') ?>
+    <?php the_field('location') ?>
+
+
+    <?php the_field('link') ?>
+    <?php get_field('access_options') ?>
     <?php the_field('graphic') ?>
+    <?php the_field('method_of_rsvp') ?>
+    <?php the_field('contact_via_email') ?>
+    <?php the_field('contact_message') ?>
+    <?php the_field('rsvp_link') ?>
 
 <?php endwhile; endif;?>
 
