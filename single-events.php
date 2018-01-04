@@ -74,19 +74,24 @@ if( $options ): ?>
        
          <div class="animated slideInUp flex fb-03 flex-auto width-full">
             <div class="flex-auto fb-1 bg-green-1 white type-name-serif type-size-subtitle line-height-1 p2 bold">More Events</div>
-<a href="<?php if($prev->link){echo $prev->link;} ?> 
+
+<?php if($next->obj): ?>
+
+<a href="<?php if($next->link){echo $next->link;} ?> 
 " class="text-decoration-none button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
     <div class="type-size-paragraph green-1 bold line-height-2 type-name-serif">
-        <?php the_field('title', $prev->obj->ID) ?>
+        <?php the_field('title', $next->obj->ID) ?>
     </div>
     
 
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
-    <?php the_field('date', $prev->obj->ID) ?></div>
+    <?php the_field('date', $next->obj->ID) ?></div>
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
-    <?php $start = get_field('start_time', $prev->obj->ID);  $end = get_field('start_time', $prev->obj->ID); timed($start, $end); ?></div>
+    <?php $start = get_field('start_time', $next->obj->ID);  $end = get_field('start_time', $next->obj->ID); timed($start, $end); ?></div>
 
 </a>
+<?php endif; ?>
+    <?php if($prev->obj): ?>
     <a href="<?php if($prev->link){echo $prev->link;} ?>" class="button bg-gray-1 p2 fb-2 flex-auto"><div class="type-name-serif type-size-subtitle bold green-1"></div>
     <div class="type-size-paragraph green-1 bold line-height-2 type-name-serif"> <?php the_field('title', $prev->obj->ID) ?></div>
     <div class="pt1 type-size-paragraph trans-black bold line-height-2 type-name-serif">
@@ -95,6 +100,7 @@ if( $options ): ?>
     <?php $start = get_field('start_time', $prev->obj->ID);  $end = get_field('start_time', $prev->obj->ID); timed($start, $end); ?></div>
 
 </a>
+<?php endif; ?>
         </div>
     </div>
         <div class="flex-auto fb-1" style="background: url(http://img.mensjournal.com/article-leads-horizontal/screen-shot-2017-03-29-at-13810-pm-a887f892-960b-4efe-8de0-fa2501d9134f.png) center center; background-size: cover;">
