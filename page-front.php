@@ -4,7 +4,7 @@
  define( 'THEME_IMAGES', get_template_directory_uri().'/images' );
 
  $options = get_field('page_front', 'option');
- $images = get_field('page_front_site_images');
+ $images = get_field('page_front_site_images', 'option');
  echo print_r($images);
  // $image = array_rand()
 
