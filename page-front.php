@@ -5,8 +5,8 @@
 
  $options = get_field('page_front', 'option');
  $images = get_field('page_front_site_images', 'option');
- echo array_rand($images);
-// $image = array_rand()
+ $number = array_rand($images);
+echo $images[$number]
 
 ?>
 
