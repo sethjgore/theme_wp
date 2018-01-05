@@ -1,15 +1,15 @@
-.acf-field p.description {
+#deafnyc-contact.acf-field p.description {
 	 font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
 }
 
-.acf-field .acf-label label {
+#deafnyc-contact.acf-field .acf-label label {
     display: block;
     font-weight: bold;
     font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
 }
 
 
-.acf-field input[type="text"], .acf-field input[type="password"], .acf-field input[type="number"], .acf-field input[type="search"], .acf-field input[type="email"], .acf-field input[type="url"], .acf-field textarea, .acf-field select {
+#deafnyc-contact.acf-field input[type="text"], #deafnyc-contact.acf-field input[type="password"], #deafnyc-contact.acf-field input[type="number"], #deafnyc-contact.acf-field input[type="search"], #deafnyc-contact.acf-field input[type="email"], #deafnyc-contact.acf-field input[type="url"], #deafnyc-contact.acf-field textarea, #deafnyc-contact.acf-field select {
     width: 100%;
     padding: .2em;
     resize: none;
@@ -21,13 +21,25 @@
     line-height: 1.25;
 }
 
-.acf-image-uploader p{
+#deafnyc-contact .acf-image-uploader{
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#deafnyc-contact .acf-image-uploader p{
 	font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
 }
 
 
-.acf-image-uploader a{
-	font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+#deafnyc-contact .acf-image-uploader a{
+  font-size: calc(0.75vmin + 0.75vmax + 0.5vmin);
 	border: none;
   outline: none;
   color: white;
@@ -37,13 +49,15 @@
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
+  border-radius: 25em;
 }
 
 
-.acf-image-uploader:hover {
+#deafnyc-contact .acf-image-uploader:hover {
   filter: brightness(0.8);
 }
-.acf-image-uploader:focus,
-.acf-image-uploader:active {
+#deafnyc-contact .acf-image-uploader:focus,
+#deafnyc-contact .acf-image-uploader:active {
   outline: none;
 }
