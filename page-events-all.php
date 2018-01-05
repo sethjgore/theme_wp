@@ -31,7 +31,7 @@
 </div>
             <div class="animated slideInUp mb2 slight-radius button bg-blue-royal p2">
         <div class="flex">
-    <div onclick="alert('testing');" class="flex-auto fb-2">
+    <div onclick="alert('alert('modal'); modal();');" class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif items-center type-size-subtitle bold trans-black flex"><img class="pr2 type-size-subtitle height-one " src="<?php echo THEME_IMAGES;?>/contact.svg"><img class="pr2 type-size-title height-two" src="<?php echo THEME_IMAGES;?>/schedule.svg"><img class="pr2 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/chat.svg"></div>
         <div class="type-size-paragraph white italic line-height-2 type-name-serif">Questions, events, submissions accepted!</div>
             </div>
