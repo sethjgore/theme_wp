@@ -118,7 +118,7 @@ if( $options ): ?>
     <?php $method = get_field('method_of_rsvp');
 
     if($method == 'Both'): ?>
-    <div onclick="alert('email address modal');"  class=" animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div  class=" animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
@@ -137,7 +137,7 @@ if( $options ): ?>
         </div>
     </a>
     <?php elseif($method == 'Email'):?>
-    <div onclick="alert('email address modal');" class=" animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div class=" animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
