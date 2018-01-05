@@ -1,15 +1,15 @@
-#deafnyc-contact.acf-field p.description {
+#deafnyc-contact .acf-field p.description {
 	 font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
 }
 
-#deafnyc-contact.acf-field .acf-label label {
+#deafnyc-contact .acf-field .acf-label label {
     display: block;
     font-weight: bold;
     font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
 }
 
 
-#deafnyc-contact.acf-field input[type="text"], #deafnyc-contact.acf-field input[type="password"], #deafnyc-contact.acf-field input[type="number"], #deafnyc-contact.acf-field input[type="search"], #deafnyc-contact.acf-field input[type="email"], #deafnyc-contact.acf-field input[type="url"], #deafnyc-contact.acf-field textarea, #deafnyc-contact.acf-field select {
+#deafnyc-contact .acf-field input[type="text"], #deafnyc-contact .acf-field input[type="password"], #deafnyc-contact .acf-field input[type="number"], #deafnyc-contact .acf-field input[type="search"], #deafnyc-contact .acf-field input[type="email"], #deafnyc-contact .acf-field input[type="url"], #deafnyc-contact .acf-field textarea, #deafnyc-contact .acf-field select {
     width: 100%;
     padding: .2em;
     resize: none;
