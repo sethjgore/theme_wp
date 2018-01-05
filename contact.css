@@ -87,5 +87,19 @@
     transform: scale(1.4);
 }
 
-   
+#deafnyc-contact input[type="submit"]{
+    font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    background: rgba(41,73,254,0.8);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    border-radius: 25em;
+    white-space: nowrap;
+}
 
