@@ -87,6 +87,9 @@
     transform: scale(1.4);
 }
 
+#deafnyc-contact .acf-form-submit{
+  text-align: center;
+}
 #deafnyc-contact input[type="submit"]{
     font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
     border: none;
