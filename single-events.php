@@ -117,6 +117,8 @@ if( $options ): ?>
 <div style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat'].','.$location['lng']; ?>&zoom=13&size=300x600&scale=2&maptype=terrain&markers=size:mid%7Ccolor:red%7C<?php echo $location['lat'].','.$location['lng']; ?>&key=AIzaSyDVgQTbBmDGyADEwfz_QiMjiqOMCrqANFY) center center; background-size: cover;" class="widht-full p2 height-full">
     <?php $method = get_field('method_of_rsvp');
 
+    echo $method;
+
     if($method == 'Both'): ?>
     <div  class=" animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
