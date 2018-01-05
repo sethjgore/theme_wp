@@ -28,7 +28,7 @@ define( 'WP_DEBUG', true );
         </div>
         <div class="flex-auto fb-1 flex bg-gray-1">
         <div class="flex flex-column items-start justify-center flex-auto fb-05 bg-green-1">
-            <div class="bold line-height-2 type-size-title type-name-sans white">
+            <div class="bold px2 line-height-2 type-size-title type-name-sans white">
                 Submit <br> something!
             </div>
 
