@@ -26,7 +26,7 @@
 <div class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
         <div class="flex-auto fb-1 mx2">
             <div class="height-full flex flex-column justify-end"> 
-            <a href="<?php echo home_url(); ?>" class="flex height-full items-center"><img src="<?php echo THEME_IMAGES;?>/logo-green-large-black-white.svg" class="my4 width-full type-size-two height-three"></a>
+            <a href="<?php echo home_url(); ?>" class="flex height-full items-center"><img src="<?php echo THEME_IMAGES;?>/logo-green-large-black-solid.svg" class="my4 width-full type-size-two height-three"></a>
             <div onclick="alert('subscribe modal');"  class="animated slideInUp mb2 slight-radius button bg-yellow p2">
         <div class="flex">
     <div class="flex-auto fb-2">
