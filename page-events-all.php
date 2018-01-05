@@ -71,7 +71,7 @@
       $event = get_sub_field('event');
       $start = get_field('start_time', $event->ID);
       $end = get_field('end_time', $event->ID);
-      $time = timed($start,$end);
+      x
 
       ?>
 
@@ -97,7 +97,7 @@
         <div class="flex flex-column flex-auto p1 fb-1">
             <div class="type-size-menu type-name-serif black flex-auto fb-1 line-height-4">
               <?php echo $event->description; ?></div>
-            <div class="trans-black type-size-menu type-name-serif italic line-height-4"><?php echo the_field('date', $event->ID) ?><?if($time){ echo $time }?>   </div>
+            <div class="trans-black type-size-menu type-name-serif italic line-height-4"><?php echo the_field('date', $event->ID) ?><?php timed()?></div>
         </div>
         
     </a>
