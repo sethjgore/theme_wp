@@ -1,11 +1,14 @@
 #deafnyc-contact .acf-field p.description {
 	 font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+	 line-height: 1.25;
+
 }
 
 #deafnyc-contact .acf-field .acf-label label {
     display: block;
     font-weight: bold;
     font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+    line-height: 1.25;
 }
 
 
