@@ -17,7 +17,6 @@
 
 <?php get_header(); ?>
 
-<?php include('modal.php') ?>
 <?php
 
   $cycle = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
