@@ -71,7 +71,6 @@
       $event = get_sub_field('event');
       $start = get_field('start_time', $event->ID);
       $end = get_field('end_time', $event->ID);
-      $time = timed($start,$end);
 
       ?>
 
