@@ -39,8 +39,8 @@ $next->link = get_permalink($next->obj);
         </div>
 
         <div class="width-full flex flex-auto fb-2">
-            <div class="width-full flex-column flex flex-auto fb-1 p2"><div class="type-size-two mt2 type-name-serif line-height-1 green-1 bold mb4">    <?php the_field('title') ?></div>
-            <div class="flex flex-auto py2 fb-1">
+            <div class="width-full flex-column flex flex-auto fb-1 p2"><div class="flex-auto fb-1 type-size-two mt2 type-name-serif line-height-1 green-1 bold mb4">    <?php the_field('title') ?></div>
+            <div class="flex-auto py2 fb-1">
             <div class="type-size-paragraph type-name-serif black flex-auto fb-1 line-height-4">
                     <?php the_field('description') ?>
             </div>
