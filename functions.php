@@ -67,7 +67,7 @@ function my_acf_init() {
 
 add_action('acf/init', 'my_acf_init');
 
-acf_enqueue_uploader();
+// acf_enqueue_uploader();
 
 dsb_theme_init();
 
