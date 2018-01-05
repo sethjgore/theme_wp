@@ -5,8 +5,7 @@
 }
 
 #deafnyc-contact #acf-form{
-  margin-right: 2em;
-  margin-left: 1em;
+  margin: 0 2em 2em 1em;
 }
 
 #deafnyc-contact .acf-input-wrap input{
