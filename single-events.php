@@ -103,7 +103,7 @@ if( $options ): ?>
 <?php endif; ?>
         </div>
     </div>
-        <div class="flex-auto fb-1" style="background: url(http://img.mensjournal.com/article-leads-horizontal/screen-shot-2017-03-29-at-13810-pm-a887f892-960b-4efe-8de0-fa2501d9134f.png) center center; background-size: cover;">
+        <div class="flex-auto fb-1" style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=<?php echo  $location['lat'].','.$location['lon']; ?>&zoom=13&size=2000x500&maptype=roadmap&key=AIzaSyDVgQTbBmDGyADEwfz_QiMjiqOMCrqANFY) center center; background-size: cover;">
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">Where?</div>
     <div class="type-size-subtitle white line-height-2 type-name-serif"><?php $location = get_field('location'); if($location){ echo $location['address'];} ?></div>
 </div>
