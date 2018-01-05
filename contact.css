@@ -79,8 +79,13 @@
 #deafnyc-contact ul.acf-radio-list li label, #deafnyc-contact ul.acf-checkbox-list li label {
     font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
       display: inline;
-      margin-right: 1em;
-      /* background: red; */
-      transform: scale(1.4);
   }
+
+#deafnyc-contact  ul.acf-radio-list li input[type="checkbox"], #deafnyc-contact  ul.acf-checkbox-list li input[type="checkbox"], #deafnyc-contact  ul.acf-radio-list li input[type="radio"], #deafnyc-contact  ul.acf-checkbox-list li input[type="radio"] {
+       margin-right: 1em;
+    /* background: red; */
+    transform: scale(1.4);
+}
+
+   
 
