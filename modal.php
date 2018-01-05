@@ -12,15 +12,14 @@ define( 'WP_DEBUG', true );
 
 <?php get_header(); ?>
 
-<?php echo:
-<script type="text/javascript">
+<?php echo "<script type='text/javascript'>
 (function($) {
     
     // setup fields
     acf.do_action('append', $('#popup-id'));
     
 })(jQuery); 
-</script>
+</script>" ?>
 
 <div class="flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
         <div class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
