@@ -105,7 +105,7 @@ if( $options ): ?>
     </div>
 
         <?php $location = get_field('location'); ?>
-        <div class="flex-auto fb-1" >
+        <div class="flex-auto fb-1 overflow-hidden">
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">Where?</div>
     <div class="type-size-subtitle white line-height-2 type-name-serif"><?php if($location){ echo $location['address'];} ?></div>
 </div>
@@ -114,7 +114,7 @@ if( $options ): ?>
     <div class="type-size-subtitle white line-height-2 type-name-serif"> <?php echo $time; ?></div>
 
 </div>
-<div style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat'].','.$location['lng']; ?>&zoom=13&size=300x600&scale=2&maptype=terrain&markers=size:mid%7Ccolor:red%7C<?php echo $location['lat'].','.$location['lng']; ?>&key=AIzaSyDVgQTbBmDGyADEwfz_QiMjiqOMCrqANFY) center center; background-size: cover;" class="widht-full p2 height-full">
+<div style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat'].','.$location['lng']; ?>&zoom=13&size=300x600&scale=2&maptype=terrain&markers=size:mid%7Ccolor:red%7C<?php echo $location['lat'].','.$location['lng']; ?>&key=AIzaSyDVgQTbBmDGyADEwfz_QiMjiqOMCrqANFY) center center; background-size: cover;" class="width-full p2 height-full">
     <?php $method = get_field('method_of_rsvp');
 
     if($method == 'Both'): ?>
