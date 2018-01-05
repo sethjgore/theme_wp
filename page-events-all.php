@@ -4,6 +4,15 @@
  define( 'THEME_IMAGES', get_template_directory_uri().'/images' );
 
  $options = get_field('page_events', 'option');
+
+ function timed($start, $end){
+    if($start && $end){
+        echo $start." - ".$end;
+      }else if($start){
+        echo $start;
+      }
+}
+
 ?>
 
 <?php get_header(); ?>
@@ -60,6 +69,7 @@
 
 
       $event = get_sub_field('event');
+      echo get_field('start_time', $event->ID);
       if($event->start_time && $event->end_time){
         // $time = $event->$start_time." - ".$event->end_time;
       }else if($event->start_time){
