@@ -105,7 +105,7 @@ if( $options ): ?>
     </div>
         <div class="flex-auto fb-1" style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=<?php echo  $location['lat'].','.$location['lon']; ?>&zoom=13&size=2000x500&maptype=roadmap&key=AIzaSyDVgQTbBmDGyADEwfz_QiMjiqOMCrqANFY) center center; background-size: cover;">
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">Where?</div>
-    <div class="type-size-subtitle white line-height-2 type-name-serif"><?php $location = get_field('location'); if($location){ echo $location['address'].$location['lon']. $location['lat'];} ?></div>
+    <div class="type-size-subtitle white line-height-2 type-name-serif"><?php $location = get_field('location'); if($location){ echo $location['address'].$location['lon'];} ?></div>
 </div>
             <div class="bg-black p2"><div class="type-name-serif type-size-subtitle bold green-1">When?</div>
     <div class="type-size-subtitle white line-height-2 type-name-serif"><?php the_field('date')?></div>
