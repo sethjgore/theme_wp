@@ -27,13 +27,17 @@ define( 'WP_DEBUG', true );
         <div class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES; ?>/cancel.svg"></div>
         </div>
         <div class="flex-auto fb-1 flex bg-gray-1">
-        <div class="flex-auto fb-1 bg-royal-blue">
-            <div class="type-size-title type-name-sans white">
+        <div class="flex-auto fb-05 bg-green-1">
+            <div class="bold line-height-2 type-size-title type-name-sans white">
                 Submit something!
+            </div>
+
+            <div class="mt2 line-height-2 type-size-paragraph type-name-sans white">
+                Send your event and get people to come!
             </div>
         </div>
         <div id="deafnyc-contact" class="bg-white flex-auto fb-1 overflow-auto">
-        <div id="popup-id" class="px2 py2 bg-white animated fadeInLeft relative z1">
+        <div id="popup-id" class="mr2 px2 py2 bg-white animated fadeInLeft relative z1">
             <?php acf_form(array(
                     'post_id'       => 'new_post',
                     'new_post'      => array(
