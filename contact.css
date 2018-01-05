@@ -8,6 +8,7 @@
     font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
 }
 
+
 .acf-field input[type="text"], .acf-field input[type="password"], .acf-field input[type="number"], .acf-field input[type="search"], .acf-field input[type="email"], .acf-field input[type="url"], .acf-field textarea, .acf-field select {
     width: 100%;
     padding: .2em;
@@ -18,4 +19,31 @@
     box-sizing: border-box;
    	font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
     line-height: 1.25;
+}
+
+.acf-image-uploader p{
+	font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+}
+
+
+.acf-image-uploader a{
+	font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+	border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  background: #049b1f;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.acf-image-uploader:hover {
+  filter: brightness(0.8);
+}
+.acf-image-uploader:focus,
+.acf-image-uploader:active {
+  outline: none;
 }
