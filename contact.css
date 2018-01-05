@@ -69,3 +69,8 @@
 #deafnyc-contact .acf-image-uploader:active {
   outline: none;
 }
+
+
+#deafnyc-contact ul.acf-radio-list li label, ul.acf-checkbox-list li label {
+    font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+  }
