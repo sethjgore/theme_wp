@@ -1,5 +1,6 @@
 <?php
 
+
 define( 'MY_THEME_BASE_PATH', get_template_directory() );
 define( 'MY_THEME_BASE_URI', get_template_directory_uri() );
 define( 'MY_THEME_ASSETS_URI', MY_THEME_BASE_URI.'/assets' );
@@ -65,6 +66,8 @@ function my_acf_init() {
 }
 
 add_action('acf/init', 'my_acf_init');
+
+acf_enqueue_uploader();
 
 dsb_theme_init();
 
