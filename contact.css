@@ -106,3 +106,6 @@
     white-space: nowrap;
 }
 
+#deafnyc-contact .acf-icon{
+  display: none;
+}
