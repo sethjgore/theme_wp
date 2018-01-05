@@ -27,9 +27,9 @@ define( 'WP_DEBUG', true );
         <div class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES; ?>/cancel.svg"></div>
         </div>
         <div class="flex-auto fb-1 flex bg-gray-1">
-        <div class="flex-auto fb-05 bg-green-1">
+        <div class="flex flex-column items-start justify-center flex-auto fb-05 bg-green-1">
             <div class="bold line-height-2 type-size-title type-name-sans white">
-                Submit something!
+                Submit <br> something!
             </div>
 
             <div class="mt2 line-height-2 type-size-paragraph type-name-sans white">
