@@ -15,11 +15,11 @@ function timed($start, $end){
       }
 }
 
-$prev->obj = get_adjacent_post(false,'',false);
+$prev->obj = get_adjacent_post(false,'',true);
 
 $prev->link = get_permalink($prev->obj);
 
-$next->obj = get_adjacent_post(false,'',true);
+$next->obj = get_adjacent_post(false,'',false);
 
 $next->link = get_permalink($next->obj);
 
