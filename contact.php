@@ -22,7 +22,7 @@ define( 'WP_DEBUG', true );
 </script>" ?>
 
 <div class="flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
-        <div class="flex-auto fb-1 flex bg-gray-1">
+        <div class="flex-auto fb-1 flex bg-green-1">
         <div class="flex flex-column items-start justify-center pr2 pl3 flex-auto fb-05 bg-green-1">
             <div class="bold line-height-2 type-size-title type-name-sans white">
                 Submit <br> something!
