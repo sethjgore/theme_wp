@@ -26,8 +26,14 @@ define( 'WP_DEBUG', true );
         <div class="flex-auto fb-02 flex width-full justify-end items-start">
         <div class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES; ?>/cancel.svg"></div>
         </div>
-        <div class="flex-auto fb-1 overflow-auto">
-        <div id="popup-id" class="bg-white animated fadeInLeft relative z1">
+        <div class="flex-auto fb-1 flex bg-gray-1">
+        <div class="flex-auto fb-1 bg-royal-blue">
+            <div class="type-size-title type-name-sans white">
+                Submit something!
+            </div>
+        </div>
+        <div class="bg-white flex-auto fb-1 overflow-auto">
+        <div id="popup-id" class="px2 py2 bg-white animated fadeInLeft relative z1">
             <?php acf_form(array(
                     'post_id'       => 'new_post',
                     'new_post'      => array(
@@ -37,6 +43,7 @@ define( 'WP_DEBUG', true );
                     'submit_value'      => 'Submit your event'
                 )); ?>
         </div>
+    </div>
     </div>
    </div>
 
