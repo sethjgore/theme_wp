@@ -4,6 +4,9 @@
 
 }
 
+#deafnyc-contact .acf-input-wrap input{
+	 height: 100%;
+}
 #deafnyc-contact .acf-field .acf-label label {
     display: block;
     font-weight: bold;
