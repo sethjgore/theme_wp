@@ -69,14 +69,10 @@
 
 
       $event = get_sub_field('event');
-      echo get_field('start_time', $event->ID);
-      if($event->start_time && $event->end_time){
-        // $time = $event->$start_time." - ".$event->end_time;
-      }else if($event->start_time){
-        // $time = date($event->start_time);
-
-      }
-     
+      $start = get_field('start_time', $event->ID);
+      $end = get_field('end_time', $event->ID);
+      $time = timed($start,$end);
+      
       ?>
 
           <a href="<?php echo get_post_permalink($event->ID) ?>" class="p2 bg-white text-decoration-none items-center mb2 width-full flex"><div><div class="type-size-subtitle line-height-1 m1 type-name-serif green-1 bold line-height-2"><?php echo $event->title; ?> </div>
