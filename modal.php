@@ -16,15 +16,14 @@
         </div>
         <div class="flex-auto fb-1 flex items-center justify-center">
         <div class="bg-white animated fadeInLeft overflow-hidden relative z1">
-            <div class="type-size-two" style="background: url(https://thumbs.dreamstime.com/b/free-hand-sketch-new-york-city-skyline-vector-scribble-outline-67170900.jpg) center center;
-    background-size: 120%; height: 3em;"></div>
-            <div class="px2 pb2 py1 flex flex-column items-center justify-center width-full">
-                <label class="type-size-title type-weight-light type-name-sans px3">Start living like a real deaf new yorker!</label>
-            <div class="type-name-sans type-size-paragraph">Our newsletter is sent out every Wednesday.</div>
-            <div class="button-pill overflow-hidden flex mt1 mb3"><input type="text" class="button bg-blue-royal white px2 inline flex type-size-paragraph">
-            <div class="inline button type-name-sans type-size-paragraph px3 bg-orange white" type="submit" text="Add me to the list!">Submit</div>
-        </div>
-            </div>
+            <?php acf_form(array(
+                    'post_id'       => 'new_post',
+                    'new_post'      => array(
+                        'post_type'     => 'event',
+                        'post_status'       => 'draft'
+                    ),
+                    'submit_value'      => 'Submit your event'
+                )); ?>
         </div>
     </div>
    </div>
