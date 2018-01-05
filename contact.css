@@ -1,0 +1,21 @@
+.acf-field p.description {
+	 font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+}
+
+.acf-field .acf-label label {
+    display: block;
+    font-weight: bold;
+    font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+}
+
+.acf-field input[type="text"], .acf-field input[type="password"], .acf-field input[type="number"], .acf-field input[type="search"], .acf-field input[type="email"], .acf-field input[type="url"], .acf-field textarea, .acf-field select {
+    width: 100%;
+    padding: .2em;
+    resize: none;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   	font-size: calc(1.3vmin + 1.3vmax + 0.5vmin);
+    line-height: 1.25;
+}
