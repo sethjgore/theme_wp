@@ -39,6 +39,7 @@ define( 'WP_DEBUG', true );
         <div id="deafnyc-contact" class="bg-white flex-auto fb-1 overflow-auto">
         <div id="popup-id" class="mr2 px2 py2 bg-white animated fadeInLeft relative z1">
             <?php acf_form(array(
+                    'html_updated_message'  => '<div class="absolute top-0 right-0 left-0 " class="bg-red center bold type-name-sans type-size-title white">We got your submission!</div>',
                     'post_id'       => 'new_post',
                     'new_post'      => array(
                         'post_type'     => 'events',
