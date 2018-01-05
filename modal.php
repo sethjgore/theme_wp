@@ -31,7 +31,7 @@ define( 'WP_DEBUG', true );
             <?php acf_form(array(
                     'post_id'       => 'new_post',
                     'new_post'      => array(
-                        'post_type'     => 'event',
+                        'post_type'     => 'events',
                         'post_status'       => 'draft'
                     ),
                     'submit_value'      => 'Submit your event'
