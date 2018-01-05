@@ -4,6 +4,11 @@
 
 }
 
+#deafnyc-contact #acf-form{
+  margin-right: 2em;
+  margin-left: 1em;
+}
+
 #deafnyc-contact .acf-input-wrap input{
 	 height: 100%;
 }
