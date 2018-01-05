@@ -149,7 +149,7 @@ if( $options ): ?>
     <?php elseif($method == 'Website'): ?>
         <a href="<?php the_field('rsvp_link')?>"  class="mb2 text-decoration-none  animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
-        <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
+        <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('rsvp_message') ?></div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
             </div>
         <div class="flex-auto flex items-center fb-03">
