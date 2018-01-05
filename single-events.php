@@ -116,9 +116,9 @@ if( $options ): ?>
 </div>
 <div style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $location['lat'].','.$location['lng']; ?>&zoom=13&size=300x600&scale=2&maptype=terrain&markers=size:mid%7Ccolor:red%7C<?php echo $location['lat'].','.$location['lng']; ?>&key=AIzaSyDVgQTbBmDGyADEwfz_QiMjiqOMCrqANFY) center center; background-size: cover;" class="widht-full p2 height-full">
     <?php $method = get_field('method_of_rsvp');
-    
+
     if($method == 'Both'): ?>
-    <div  class=" animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div  class="mb2  animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
@@ -127,7 +127,7 @@ if( $options ): ?>
             <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
         </div>
     </div> 
-    <a href="<?php the_field('rsvp_link') ?>"  class=" text-decoration-none animated jackInTheBox slight-radius button bg-red p2 flex">
+    <a href="<?php the_field('rsvp_link') ?>"  class="mb2  text-decoration-none animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
@@ -137,7 +137,7 @@ if( $options ): ?>
         </div>
     </a>
     <?php elseif($method == 'Email'):?>
-    <div class=" animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div class=" mb2  animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
@@ -147,7 +147,7 @@ if( $options ): ?>
         </div>
     </div> 
     <?php elseif($method == 'Website'): ?>
-        <a href="<?php the_field('rsvp_link')?>"  class="text-decoration-none  animated jackInTheBox slight-radius button bg-red p2 flex">
+        <a href="<?php the_field('rsvp_link')?>"  class="mb2 text-decoration-none  animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Go to website to RSVP</div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
@@ -160,7 +160,7 @@ if( $options ): ?>
 
 
     <?php if(get_field('link')): ?>
-    <a href="<?php the_field('link') ?>" class=" animated jackInTheBox slight-radius button bg-white p2 flex text-decoration-none">
+    <a href="<?php the_field('link') ?>" class=" mb2 animated jackInTheBox slight-radius button bg-white p2 flex text-decoration-none">
         <div class="flex flex-auto items-center fb-2">
             <div class="flex-auto flex items-center fb-03">
                 <img src="<?php echo THEME_IMAGES ?>/info.svg" class="type-size-three width-two">
