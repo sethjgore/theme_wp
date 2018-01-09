@@ -22,7 +22,7 @@
   $cycle = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
 ?>
 
-<div class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
+<div id="app" class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
         <div class="flex-auto fb-1 mx2">
             <div class="height-full flex flex-column justify-end"> 
             <a href="<?php echo home_url(); ?>" class="flex height-full items-center"><img src="<?php echo THEME_IMAGES;?>/logo-green-large-black-solid.svg" class="my4 width-full type-size-two height-three"></a>
@@ -39,7 +39,7 @@
 </div>
             <div class="animated slideInUp mb2 slight-radius button bg-blue-royal p2">
         <div class="flex">
-    <div onclick="toggle(visible)" class="flex-auto fb-2">
+    <div onclick="toggle('#modalSubscribe')" class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif items-center type-size-subtitle bold trans-black flex"><img class="pr2 type-size-subtitle height-one " src="<?php echo THEME_IMAGES;?>/contact.svg"><img class="pr2 type-size-title height-two" src="<?php echo THEME_IMAGES;?>/schedule.svg"><img class="pr2 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/chat.svg"></div>
         <div class="type-size-paragraph white italic line-height-2 type-name-serif">Questions, events, submissions accepted!</div>
             </div>
@@ -145,5 +145,25 @@
 
     </div>
 
+
+<div id="modalSubscribe" class="flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
+        <div class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
+        <div class="flex-auto fb-02 flex width-full justify-end items-start">
+        <div class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="/cancel.svg"></div>
+        </div>
+        <div class="flex-auto fb-1 flex items-center justify-center">
+        <div class="bg-white animated fadeInLeft overflow-hidden relative z1">
+            <div class="type-size-two" style="background: url(https://thumbs.dreamstime.com/b/free-hand-sketch-new-york-city-skyline-vector-scribble-outline-67170900.jpg) center center;
+    background-size: 120%; height: 3em;"></div>
+            <div class="px2 pb2 py1 flex flex-column items-center justify-center width-full">
+                <label class="type-size-title type-weight-light type-name-sans px3">Start living like a real deaf new yorker!</label>
+            <div class="type-name-sans type-size-paragraph">Our newsletter is sent out every Wednesday.</div>
+            <div class="button-pill overflow-hidden flex mt1 mb3"><input type="text" class="button bg-blue-royal white px2 inline flex type-size-paragraph">
+            <div class="inline button type-name-sans type-size-paragraph px3 bg-orange white" type="submit" text="Add me to the list!">Submit</div>
+        </div>
+            </div>
+        </div>
+    </div>
+   </div>
 
 <?php get_footer(); ?>

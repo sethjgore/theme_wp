@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 let toggle = function(item){
-	if(typeof item == boolean){
-		item = !item;
+	if(typeof item == 'boolean'){
+		document.querySelector(item).toggle('hide');
 	}else{
-		console.log('toggle() only accepts boolean values');
+		console.log(item+ 'is not a selector in document');
 	}
 }
