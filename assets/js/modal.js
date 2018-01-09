@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 let toggle = function(item){
+	console.log(item)
 	if(document.querySelector(item)){
 		document.querySelector(item).toggle('hide');
 	}else{
