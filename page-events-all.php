@@ -149,10 +149,10 @@
 <div id="modalSubscribe" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
         <div class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
         <div class="flex-auto fb-02 flex width-full justify-end items-start">
-        <div class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="/cancel.svg"></div>
+        <div  class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="/cancel.svg"></div>
         </div>
         <div class="flex-auto fb-1 flex items-center justify-center">
-        <div class="bg-white animated fadeInLeft overflow-hidden relative z1">
+        <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1">
             <div class="type-size-two" style="background: url(https://thumbs.dreamstime.com/b/free-hand-sketch-new-york-city-skyline-vector-scribble-outline-67170900.jpg) center center;
     background-size: 120%; height: 3em;"></div>
             <div class="px2 pb2 py1 flex flex-column items-center justify-center width-full">
