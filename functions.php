@@ -69,6 +69,11 @@ add_action('acf/init', 'my_acf_init');
 
 // acf_enqueue_uploader();
 
+
+wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/modal.js', array (), false, true);
+
+wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/vue.js', array (), false, true);
+
 dsb_theme_init();
 
 ?>
