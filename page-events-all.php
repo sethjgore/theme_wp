@@ -37,7 +37,7 @@
         </div>
 </div>
 </div>
-    <a href="<? the_field('contact_page') ?>" class="animated slideInUp mb2 slight-radius button bg-blue-royal p2 text-decoration-none">
+    <a href="<?php the_field('contact_page') ?>" class="animated slideInUp mb2 slight-radius button bg-blue-royal p2 text-decoration-none">
         <div class="flex">
     <div  class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif items-center type-size-subtitle bold trans-black flex"><img class="pr2 type-size-subtitle height-one " src="<?php echo THEME_IMAGES;?>/contact.svg"><img class="pr2 type-size-title height-two" src="<?php echo THEME_IMAGES;?>/schedule.svg"><img class="pr2 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/chat.svg"></div>
