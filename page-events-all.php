@@ -26,7 +26,7 @@
         <div class="flex-auto fb-1 mx2">
             <div class="height-full flex flex-column justify-end"> 
             <a href="<?php echo home_url(); ?>" class="flex height-full items-center"><img src="<?php echo THEME_IMAGES;?>/logo-green-large-black-solid.svg" class="my4 width-full type-size-two height-three"></a>
-            <div onclick="alert('subscribe modal');"  class="animated slideInUp mb2 slight-radius button bg-yellow p2">
+            <div onclick="toggle('#modalSubscribe')"  class="animated slideInUp mb2 slight-radius button bg-yellow p2">
         <div class="flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">Don't miss out!</div>
@@ -37,9 +37,9 @@
         </div>
 </div>
 </div>
-            <div class="animated slideInUp mb2 slight-radius button bg-blue-royal p2">
+    <a href="<? the_field('contact_page') ?>" class="animated slideInUp mb2 slight-radius button bg-blue-royal p2 text-decoration-none">
         <div class="flex">
-    <div onclick="toggle('#modalSubscribe')" class="flex-auto fb-2">
+    <div  class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif items-center type-size-subtitle bold trans-black flex"><img class="pr2 type-size-subtitle height-one " src="<?php echo THEME_IMAGES;?>/contact.svg"><img class="pr2 type-size-title height-two" src="<?php echo THEME_IMAGES;?>/schedule.svg"><img class="pr2 type-size-subtitle height-two" src="<?php echo THEME_IMAGES;?>/chat.svg"></div>
         <div class="type-size-paragraph white italic line-height-2 type-name-serif">Questions, events, submissions accepted!</div>
             </div>
@@ -47,7 +47,7 @@
             <img src="<?php echo THEME_IMAGES;?>/right-arrow.svg" class="type-size-three width-two">
         </div>
 </div>
-</div> </div>
+</a> </div>
         </div>
         <div style="overflow-y: scroll !important; -webkit-overflow-scrolling: touch !important;" class="animated fadeIn fb-2 overflow-auto items-end flex-auto flex-column fb-1">
             <div class="p2 type-name-serif type-size subtitle flex black-trans">

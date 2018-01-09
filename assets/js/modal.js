@@ -9,7 +9,6 @@ let toggle = function(item){
 		document.querySelector(item).classList.toggle('hide');
 		let animation = document.querySelector('[visible]').getAttribute('visible');
 		document.querySelector('[visible]').classList.toggle(animation);
-		debugger;
 	}else{
 		console.log(item+ 'is not a selector in document');
 	}
