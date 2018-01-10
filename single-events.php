@@ -197,7 +197,7 @@ if( $options ): ?>
             </div>
         </div>
         
-        <a href="mailto:<?php the_field('contact_via_email') ?>" class="bg-blue white type-size-subtitle px2 py1 trans-black user-select-none pointer-events-none">Click to open in your email app.</a>
+        <a href="mailto:<?php the_field('contact_via_email') ?>" class="bg-blue white type-size-subtitle px2 py1 trans-black button-pill button">Click to open in your email app.</a>
 
     </div>
             </div>
