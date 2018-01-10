@@ -191,13 +191,13 @@ if( $options ): ?>
         </div>
         <div class="flex-auto fb-1 flex items-center justify-center">
         <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1 flex flex-column">
-            <div class="flex flex-column items-center">
-                <div class="mb2 type-size-paragraph trans-black user-select-none pointer-events-none">Copy the email address below</div><div class="type-size-two type-name-sans">
+            <div class="px2 flex flex-column items-center">
+                <div class="mb2 type-size-paragraph trans-black user-select-none pointer-events-none">Copy the email address below</div><div class="type-size-title type-name-sans">
                 <?php the_field('contact_via_email') ?>
             </div>
         </div>
         
-        <a href="mailto:<?php the_field('contact_via_email') ?>" class="mx2 my1 bg-blue-royal type-name-sans white type-size-paragraph px2 py1 trans-black button-pill button">Click to open in your email app.</a>
+        <a href="mailto:<?php the_field('contact_via_email') ?>" class="bg-blue-royal button mt3 px2 py1 text-decoration-none type-name-sans type-size-subtitle white">Click to open in your email app.</a>
 
     </div>
             </div>
