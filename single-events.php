@@ -182,7 +182,7 @@ if( $options ): ?>
 </div>
 
 
-<div id="modalSubscribe" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
+<div id="modalContact" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
 
 
         <div onclick="toggle('#modalContact')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
