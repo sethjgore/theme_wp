@@ -190,9 +190,16 @@ if( $options ): ?>
         <div onclick="toggle('#modalContact')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
         </div>
         <div class="flex-auto fb-1 flex items-center justify-center">
-        <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1">
-            <div class="type-size-two">
+        <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1 flex flex-column">
+            <div>
+                <div class="type-size-menu trans-black user-select-none pointer-events-none">Copy the email address below</div><div class="type-size-two">
                 <?php the_field('contact_via_email') ?>
+            </div>
+        </div>
+        
+        <a href="mailto:<?php the_field('contact_via_email') ?>" class="bg-blue white type-size-subtitle px2 py1 trans-black user-select-none pointer-events-none">Click to open in your email app.</a>
+
+    </div>
             </div>
         </div>
             </div>
