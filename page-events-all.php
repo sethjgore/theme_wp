@@ -190,7 +190,7 @@
                 <label class="type-size-title type-weight-light type-name-sans px3">Start living like a real deaf new yorker!</label>
             <div class="type-name-sans type-size-paragraph">Our newsletter is sent out every Wednesday.</div>
             <div class="button-pill overflow-hidden flex mt1 mb3"><input type="email" value="" name="EMAIL" id="mce-EMAIL" class="button bg-blue-royal white px2 inline flex type-size-paragraph">
-            <input class="inline button type-name-sans type-size-paragraph px3 bg-orange white" type="submit" text="Add me to the list!" name="subscribe" value="Subscribe">
+           
 
         </div>
         <div id="mce-responses" class="clear">
@@ -198,7 +198,7 @@
         <div class="response" id="mce-success-response" style="display:none"></div>
     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1abda531ae2441b963c08078f_66fbf5b4ce" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+     <input class="inline button type-name-sans type-size-paragraph px3 bg-orange white" type="submit" text="Add me to the list!" name="subscribe" value="Subscribe">
     </div>
     </form>
         </div>
