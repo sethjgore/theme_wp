@@ -148,6 +148,14 @@
 
 <div id="modalSubscribe"class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
 
+
+        <div onclick="toggle('#modalSubscribe')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
+        <div class="flex-auto fb-02 flex width-full justify-end items-start">
+        <div onclick="toggle('#modalSubscribe')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
+        </div>
+        <div class="flex-auto fb-1 flex items-center justify-center">
+        <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1">
+            
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -175,14 +183,7 @@
 <?php echo "<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAMfsE';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->" ?>
 
-
-        <div onclick="toggle('#modalSubscribe')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
-        <div class="flex-auto fb-02 flex width-full justify-end items-start">
-        <div onclick="toggle('#modalSubscribe')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
-        </div>
-        <div class="flex-auto fb-1 flex items-center justify-center">
-        <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1">
-            <div class="type-size-two" style="background: url(https://thumbs.dreamstime.com/b/free-hand-sketch-new-york-city-skyline-vector-scribble-outline-67170900.jpg) center center;
+<div class="type-size-two" style="background: url(https://thumbs.dreamstime.com/b/free-hand-sketch-new-york-city-skyline-vector-scribble-outline-67170900.jpg) center center;
     background-size: 120%; height: 3em;"></div>
             <div class="px2 pb2 py1 flex flex-column items-center justify-center width-full">
                 <form>
