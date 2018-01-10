@@ -118,7 +118,7 @@ if( $options ): ?>
     <?php $method = get_field('method_of_rsvp');
 
     if($method == 'Both'): ?>
-    <div onclick="alert('email address modal')" class="mb2  animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div onclick="toggle('#modalContact')" class="mb2  animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
@@ -137,7 +137,7 @@ if( $options ): ?>
         </div>
     </a>
     <?php elseif($method == 'Email'):?>
-    <div onclick="alert('email address modal')" class=" mb2  animated jackInTheBox slight-radius button bg-red p2 flex">
+    <div onclick="toggle('#modalContact')" class=" mb2  animated jackInTheBox slight-radius button bg-red p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black"><?php the_field('contact_message') ?></div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"><?php the_field('contact_via_email') ?></div>
@@ -180,5 +180,24 @@ if( $options ): ?>
 <div class="hide">
     <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
 </div>
+
+
+<div id="modalSubscribe" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
+
+
+        <div onclick="toggle('#modalContact')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
+        <div class="flex-auto fb-02 flex width-full justify-end items-start">
+        <div onclick="toggle('#modalContact')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
+        </div>
+        <div class="flex-auto fb-1 flex items-center justify-center">
+        <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1">
+            <div class="type-size-two">
+                <?php the_field('contact_via_email') ?>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+   </div>
 
 <?php get_footer(); ?>
