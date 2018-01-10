@@ -172,7 +172,7 @@
     </div>
 </form>
 </div>
-<?php echo "<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<?php echo "<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAMfsE';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->" ?>
 
 
@@ -185,10 +185,12 @@
             <div class="type-size-two" style="background: url(https://thumbs.dreamstime.com/b/free-hand-sketch-new-york-city-skyline-vector-scribble-outline-67170900.jpg) center center;
     background-size: 120%; height: 3em;"></div>
             <div class="px2 pb2 py1 flex flex-column items-center justify-center width-full">
+                <form>
                 <label class="type-size-title type-weight-light type-name-sans px3">Start living like a real deaf new yorker!</label>
             <div class="type-name-sans type-size-paragraph">Our newsletter is sent out every Wednesday.</div>
-            <div class="button-pill overflow-hidden flex mt1 mb3"><input type="text" class="button bg-blue-royal white px2 inline flex type-size-paragraph">
-            <div class="inline button type-name-sans type-size-paragraph px3 bg-orange white" type="submit" text="Add me to the list!">Submit</div>
+            <div class="button-pill overflow-hidden flex mt1 mb3"><input type="email" value="" name="EMAIL" id="mce-EMAIL" class="button bg-blue-royal white px2 inline flex type-size-paragraph">
+            <input class="inline button type-name-sans type-size-paragraph px3 bg-orange white" type="submit" text="Add me to the list!" name="subscribe" value="Subscribe">
+        </div>
         </div>
             </div>
         </div>
