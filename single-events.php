@@ -173,7 +173,7 @@ if( $options ): ?>
     </a>
 <?php endif; ?>
 
-<div onclick="toggle('#modalContact')"  class="mb2  text-decoration-none animated jackInTheBox slight-radius button bg-green-1 p2 flex">
+<div onclick="toggle('#modalMedia')"  class="mb2  text-decoration-none animated jackInTheBox slight-radius button bg-green-1 p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">See Flyer</div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
@@ -191,6 +191,31 @@ if( $options ): ?>
 <div class="hide">
     <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
 </div> 
+
+<div id="modalMedia" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
+
+
+        <div onclick="toggle('#modalContact')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
+        <div class="flex-auto fb-02 flex width-full justify-end items-start">
+        <div onclick="toggle('#modalContact')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
+        </div>
+        <div class="flex-auto fb-1 flex items-center justify-center">
+        <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1 flex flex-column">
+            <div class="px2 pb1 pt2 justify-center flex flex-column items-center">
+                <div class="mb2 type-size-paragraph trans-black user-select-none pointer-events-none">Copy the email address below</div><div class="type-size-title bold type-name-sans">
+                <?php the_field('contact_via_email') ?>
+            </div>
+        </div>
+        
+        <a href="mailto:<?php the_field('contact_via_email') ?>" class="bg-blue-royal button mt3 px2 py2 text-decoration-none type-name-sans type-size-subtitle white">Click here to open in your email app.</a>
+
+    </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+   </div>
 
 <div id="modalContact" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
 
