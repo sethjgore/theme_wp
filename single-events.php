@@ -226,7 +226,7 @@ if( $options ): ?>
             </div>
         </div>
         <div class="justify-center fb-1 flex-auto flex items-center bg-gray-1">
-        <a href="mailto:<?php the_field('contact_via_email') ?>" class="bg-blue-royal button-pill button m3 px2 text-decoration-none type-size-subtitle white"> open in your email app.</a></div>
+        <a href="mailto:<?php the_field('contact_via_email') ?>" class="bg-blue-royal button-pill button m3 px2 text-decoration-none type-size-subtitle white"> open in your email app</a></div>
 
     </div>
             </div>
