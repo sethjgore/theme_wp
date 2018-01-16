@@ -76,7 +76,7 @@ dsb_theme_init();
 
 
 function create_weeklyfeed() {
-load_template( TEMPLATEPATH . 'rss-weekly.php'); // You'll create a your-custom-feed.php file in your theme's directory
+load_template( get_template_directory() . 'rss-weekly.php'); // You'll create a your-custom-feed.php file in your theme's directory
 
 }
 add_action('do_feed_weeklyfeed', 'create_weeklyfeed', 10, 1); // Make sure to have 'do_feed_customfeed'
