@@ -90,8 +90,4 @@ function my_custom_rss() {
     }
 }
 
-remove_all_actions( 'do_feed_rss2' );
-
-add_action( 'do_feed_rss2', 'my_custom_rss', 10, 1 );
-
 ?>
