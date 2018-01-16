@@ -101,9 +101,9 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
  -->                                <pubDate><?php echo mysql2date( 'D, d M Y H:i:s +0000', get_post_time( 'Y-m-d H:i:s', true ), false ); ?></pubDate>
 
                                 <!-- Echo content and related posts -->
-                                <content:encoded>
+                                <description>
                                         <![CDATA[<?php echo the_excerpt_rss(); echo $postlink; echo my_rss_related(); ?>]]>
-                                </content:encoded>
+                                </description>
                         </item>
 
                 <?php endwhile; ?>
