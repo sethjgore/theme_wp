@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @sethjgore
- Sign out
- Watch 1,326
-  Star 10,384  Fork 6,027 WordPress/WordPress
- Code  Pull requests 4  Projects 0  Insights
-Branch: master Find file Copy pathWordPress/wp-includes/feed-rss2.php
-aaf99e6  on Nov 30, 2017
-@pento pento Code is Poetry.
-9 contributors @staylor @DrewAPicture @dd32 @obenland @SergeyBiryukov @rachelbaker @johnbillion @pento @aaronjorbin
-RawBlameHistory     
-132 lines (123 sloc)  3.74 KB
 <?php
 /**
  * RSS2 Feed Template for displaying RSS2 Posts feed.
@@ -141,15 +123,3 @@ do_action( 'rss_tag_pre', 'rss2' );
         <?php endwhile; ?>
 </channel>
 </rss>
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
