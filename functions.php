@@ -72,8 +72,13 @@ add_action('acf/init', 'my_acf_init');
 
 wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/modal.js', array (), false, true);
 
-wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/vue.js', array (), false, true);
-
 dsb_theme_init();
+
+
+function create_weeklyfeed() {
+load_template( TEMPLATEPATH . 'rss-weekly.php'); // You'll create a your-custom-feed.php file in your theme's directory
+
+}
+add_action('do_feed_customfeed', 'create_weeklyfeed', 10, 1); // Make sure to have 'do_feed_customfeed'
 
 ?>
