@@ -172,6 +172,17 @@ if( $options ): ?>
         </div>
     </a>
 <?php endif; ?>
+
+<div onclick="toggle('.modalContact')"  class="mb2  text-decoration-none animated jackInTheBox slight-radius button bg-green p2 flex">
+    <div class="flex-auto fb-2">
+        <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">See Flyer</div>
+        <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
+            </div>
+        <div class="flex-auto flex items-center fb-03">
+            <img src="<?php echo THEME_IMAGES ?>/right-arrow.svg" class="type-size-three width-two">
+        </div>
+    </div>   
+
 </div>
         </div>
     </div>
@@ -179,8 +190,7 @@ if( $options ): ?>
   </div>
 <div class="hide">
     <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
-</div>
-
+</div> 
 
 <div id="modalContact" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
 
@@ -206,5 +216,7 @@ if( $options ): ?>
         </div>
     </div>
    </div>
+
+
 
 <?php get_footer(); ?>
