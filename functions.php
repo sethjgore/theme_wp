@@ -81,4 +81,17 @@ load_template( get_template_directory_uri(). 'rss-weekly.php'); // You'll create
 }
 add_action('do_feed_weeklyfeed', 'create_weeklyfeed', 10, 1); // Make sure to have 'do_feed_customfeed'
 
+function my_custom_rss() {
+
+    if ( 'weekly' === get_query_var( 'post_type' ) ) {
+        get_template_part( 'feed', 'weekly' );
+    } else {
+        get_template_part( 'feed', 'rss2' );
+    }
+}
+
+remove_all_actions( 'do_feed_rss2' );
+
+add_action( 'do_feed_rss2', 'my_custom_rss', 10, 1 );
+
 ?>
