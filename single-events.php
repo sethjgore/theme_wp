@@ -195,13 +195,14 @@ if( $options ): ?>
 <div id="modalMedia" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
 
 
-        <div onclick="toggle('#modalContact')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
+        <div onclick="toggle('#modalMedia')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
         <div class="flex-auto fb-01 flex width-full justify-end items-start">
-        <div onclick="toggle('#modalContact')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
+        <div onclick="toggle('#modalMedia')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
         </div>
         <div class="flex-auto fb-1 flex items-center justify-center">
         <div visible="slideIn" class="bg-white animated overflow-hidden relative z1 flex flex-column">
-         <img class="height-full" src="<?php  $i = get_field('graphic')['url']; echo $i;?>">
+         <img style="max-width: 80vw;
+    max-height: 80vh;" class="height-full" src="<?php  $i = get_field('graphic')['url']; echo $i;?>">
 
     </div>
             </div>
