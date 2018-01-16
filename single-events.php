@@ -201,7 +201,7 @@ if( $options ): ?>
         </div>
         <div class="flex-auto fb-1 flex items-center justify-center">
         <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1 flex flex-column">
-         <img src="<?php echo get_field('graphic')->url;?>">
+         <img src="<?php  $i = get_field('graphic')->url; echo $i;?>">
          <?php print_r(get_field('graphic')) ?>
 
     </div>
