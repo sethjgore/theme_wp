@@ -221,7 +221,7 @@ if( $options ): ?>
         <div class="flex-auto fb-1 flex items-center justify-center">
         <div visible="fadeInLeft" class="bg-white animated overflow-hidden relative z1 flex flex-column">
             <div class="px2 pb1 pt2 justify-center flex flex-column items-center">
-                <div class="mb2 type-size-paragraph black user-select-none pointer-events-none">Copy the email address below</div><div class="mb3 bg-yellow button button-pill px1 type-size-three bold ">
+                <div class="mb2 type-size-paragraph black user-select-none pointer-events-none">Copy the email address below</div><div class="mb3 bg-yellow button button-pill px2 type-size-three bold ">
                 <?php the_field('contact_via_email') ?>
             </div>
         </div>
