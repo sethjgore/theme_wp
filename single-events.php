@@ -173,7 +173,7 @@ if( $options ): ?>
     </a>
 <?php endif; ?>
 
-<div onclick="toggle('.modalContact')"  class="mb2  text-decoration-none animated jackInTheBox slight-radius button bg-green p2 flex">
+<div onclick="toggle('#modalContact')"  class="mb2  text-decoration-none animated jackInTheBox slight-radius button bg-green p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">See Flyer</div>
         <div class="pt2 type-size-paragraph trans-black line-height-2 type-name-serif"></div>
