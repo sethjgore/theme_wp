@@ -3,7 +3,8 @@
  * Template Name: Custom RSS Template - Feedname
  */
 $postCount = 5; // The number of posts to show in the feed
-$posts = query_posts('showposts=' . $postCount);
+$cycle = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
+
 header('Content-Type: '.feed_content_type('rss-http').'; charset='.get_option('blog_charset'), true);
 echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>';
 ?>
@@ -25,7 +26,7 @@ echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>';
         <sy:updatePeriod><?php echo apply_filters( 'rss_update_period', 'hourly' ); ?></sy:updatePeriod>
         <sy:updateFrequency><?php echo apply_filters( 'rss_update_frequency', '1' ); ?></sy:updateFrequency>
         <?php do_action('rss2_head'); ?>
-        <?php while(have_posts()) : the_post(); ?>
+        <?php while($cycle->have_posts()) : the_post(); ?>
                 <item>
                         <title><?php the_title_rss(); ?></title>
                         <link><?php the_permalink_rss(); ?></link>
