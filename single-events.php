@@ -173,6 +173,7 @@ if( $options ): ?>
     </a>
 <?php endif; ?>
 
+<?php if(get_field('graphic')['url']): ?>
 <div onclick="toggle('#modalMedia')"  class="mb2  text-decoration-none animated jackInTheBox slight-radius button bg-green-1 p2 flex">
     <div class="flex-auto fb-2">
         <div class="line-height-2 pb1 type-name-serif type-size-subtitle bold black">See Flyer</div>
@@ -188,9 +189,7 @@ if( $options ): ?>
     </div>
   
   </div>
-<div class="hide">
-    <?php $graphic = get_field('graphic'); echo $graphic['url'] ?>
-</div> 
+<?php endif;?>
 
 <div id="modalMedia" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
 
@@ -202,7 +201,7 @@ if( $options ): ?>
         <div class="flex-auto fb-1 flex items-center justify-center">
         <div visible="slideInUp" class="bg-white animated overflow-hidden relative z1 flex flex-column">
          <img style="max-width: 80vw;
-    max-height: 80vh;" class="height-full" src="<?php  $i = get_field('graphic')['url']; echo $i;?>">
+    max-height: 80vh;" class="height-full" src="<?php  $graphic = get_field('graphic')['url']; echo $graphic;?>">
 
     </div>
             </div>
