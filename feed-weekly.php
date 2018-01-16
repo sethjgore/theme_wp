@@ -95,11 +95,10 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
                                 <title><?php the_title_rss(); ?></title>
                                 <link><?php the_permalink_rss(); ?></link>
                                 <guid isPermaLink="false"><?php the_guid(); ?></guid>
-                                <author><?php echo $email ?><?php echo ' (' . $author . ')' ?></author>
-                                <image>
+<!--                                 <image>
                                         <url><?php echo esc_url( $postimage ); ?>"/></url>
                                 </image>
-                                <pubDate><?php echo mysql2date( 'D, d M Y H:i:s +0000', get_post_time( 'Y-m-d H:i:s', true ), false ); ?></pubDate>
+ -->                                <pubDate><?php echo mysql2date( 'D, d M Y H:i:s +0000', get_post_time( 'Y-m-d H:i:s', true ), false ); ?></pubDate>
 
                                 <!-- Echo content and related posts -->
                                 <content:encoded>
