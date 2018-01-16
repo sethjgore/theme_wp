@@ -81,7 +81,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
                 <image>
                         <url>http://mysite.com/somelogo.png</url>
                         <title>
-                                <?php bloginfo_rss( 'description' ) ?>
+                                <?php bloginfo_rss( 'title' ) ?>
                         </title>
                         <link><?php bloginfo_rss( 'url' ) ?></link>
                 </image>
