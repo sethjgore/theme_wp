@@ -81,6 +81,9 @@ load_template( TEMPLATEPATH . 'rss-weekly.php'); // You'll create a your-custom-
 }
 add_action('do_feed_weeklyfeed', 'create_weeklyfeed', 10, 1); // Make sure to have 'do_feed_customfeed'
 
+add_action('do_feed_super', 'my_custom_rss_render', 10, 1); // Make sure to have 'do_feed_customfeed'
+
+
 
 add_action( 'after_setup_theme', 'my_rss_template' );
 /**
