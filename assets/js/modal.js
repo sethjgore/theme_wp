@@ -3,16 +3,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
 
-let toggle = function(selector){
- 	console.log(selector)
-	 if(document.querySelector(selector)){ 
-	 	
-		document.querySelector(selector).classList.toggle('hide');
-
+let toggle = function(item){
+	console.log(item)
+	if(document.querySelector(item)){
+		document.querySelector(item).classList.toggle('hide');
 		let animation = document.querySelector('[visible]').getAttribute('visible');
-
 		document.querySelector('[visible]').classList.toggle(animation);
 	}else{
-		console.log(selector+ ' is not a selector in document');
-	
+		console.log(item+ 'is not a selector in document');
+	}
 }
