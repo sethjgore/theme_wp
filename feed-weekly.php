@@ -54,8 +54,7 @@ $postimage = ( $postimages ) ? $postimages[0] : get_stylesheet_directory_uri() .
 /**
  * Start RSS feed.
  */
-
-<?php echo '<? xml version="1.0" encoding="UTF-8" ?>' ?>
+echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 
 <rss version="2.0"
         xmlns:content="http://purl.org/rss/1.0/modules/content/"
