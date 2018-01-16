@@ -200,7 +200,7 @@ if( $options ): ?>
         <div onclick="toggle('#modalMedia')" class="m2 button type-name-sans type-size-paragraph px3 bg-black button-pill white flex items-center justify-center"><img class="type-size-subtitle height-three" src="<?php echo THEME_IMAGES;?>/cancel.svg"></div>
         </div>
         <div class="flex-auto fb-1 flex items-center justify-center">
-        <div visible="slideIn" class="bg-white animated overflow-hidden relative z1 flex flex-column">
+        <div visible="slideInUp" class="bg-white animated overflow-hidden relative z1 flex flex-column">
          <img style="max-width: 80vw;
     max-height: 80vh;" class="height-full" src="<?php  $i = get_field('graphic')['url']; echo $i;?>">
 
