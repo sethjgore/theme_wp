@@ -81,13 +81,19 @@ load_template( get_template_directory_uri(). 'rss-weekly.php'); // You'll create
 }
 add_action('do_feed_weeklyfeed', 'create_weeklyfeed', 10, 1); // Make sure to have 'do_feed_customfeed'
 
-function my_custom_rss() {
 
-    if ( 'weekly' === get_query_var( 'post_type' ) ) {
-        get_template_part( 'feed', 'weekly' );
-    } else {
-        get_template_part( 'feed', 'rss2' );
-    }
+add_action( 'after_setup_theme', 'my_rss_template' );
+/**
+ * Register custom RSS template.
+ */
+function my_rss_template() {
+    add_feed( 'weekly', 'my_custom_rss_render' );
+}
+/**
+ * Custom RSS template callback.
+ */
+function my_custom_rss_render() {
+    get_template_part( 'feed', 'weekly' );
 }
 
 ?>
