@@ -38,7 +38,7 @@
 
 .ticker-wrap {
   
-  position: fixed;
+  position: absolute;
   /*bottom: 0;*/
   width: 80vw;
   max-width: 80vw;
