@@ -42,7 +42,7 @@ $weeklyID = $weekly->posts[0]->ID;
 
       ?>
 
-          <a href="<?php echo get_post_permalink($event->ID) ?>" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by <?php echo get_field('name');> </a>
+          <a href="<?php echo get_post_permalink($event->ID) ?>" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by <?php the_field('name');> </a>
     <?php
     endwhile;
 
