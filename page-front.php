@@ -23,9 +23,67 @@ $weeklyID = $weekly->posts[0]->ID;
         <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;
           animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>;">
           <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><?php the_field('quote', $weeklyID) ?></div>
-
+          <?php the_field('quote', $weeklyID) ?>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
+
+          
+
+  <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
+
+     <?php // check if the repeater field has rows of data
+    if( have_rows('ads') ):
+
+      print_r(get_field('ads'))
+
+    // loop through the rows of data
+    while ( have_rows('ads') ) : the_row();
+
+
+      $event = get_sub_field('event');
+      $start = get_field('start_time', $event->ID);
+      $end = get_field('end_time', $event->ID);
+
+      ?>
+
+          <a href="<?php echo get_post_permalink($event->ID) ?>" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><?php echo $event->title; ?> </a>
+    <?php
+    endwhile;
+
+    else:
+
+    // no rows found
+    endif; ?>
+
+
+      
+
+      <?php // check if the repeater field has rows of data
+    if( have_rows('cycle_events') ):
+
+    // loop through the rows of data
+    while ( have_rows('cycle_events') ) : the_row();
+
+
+      $event = get_sub_field('event');
+      $start = get_field('start_time', $event->ID);
+      $end = get_field('end_time', $event->ID);
+
+      ?>
+
+          <a href="<?php echo get_post_permalink($event->ID) ?>" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><?php echo $event->title; ?> </a>
+    <?php
+    endwhile;
+
+    else:
+
+    // no rows found
+    endif; ?>
+
+
+<?php endwhile; ?>
+
+
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Looking for interpreting services? Call us.</div>
         </div>
 </div>
