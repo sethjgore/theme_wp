@@ -43,7 +43,7 @@ $weeklyID = $weekly->posts[0]->ID;
 
       ?>
 
-          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><?php echo $ad->ID; echo $ad->name; ?> </a>
+          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><?php echo $ad['ID']; echo $ad['name']; ?> </a>
     <?php
     endwhile;
 
