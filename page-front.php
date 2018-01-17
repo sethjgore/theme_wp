@@ -12,7 +12,6 @@ $weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
 
 $weeklyID = $weekly->posts[0]->ID;
 
-    print_r(get_field('ads', $weeklyID))
 ?>
 
 <?php get_header(); ?>
