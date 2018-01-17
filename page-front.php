@@ -40,7 +40,7 @@ $weeklyID = $weekly->posts[0]->ID;
       $ad = get_row();
       // $start = get_field('start_time', $event->ID);
       // $end = get_field('end_time', $event->ID);
-
+      print_r($ad)
       print_r($ad['sponsor_image'])
       ?>
 
