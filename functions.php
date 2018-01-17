@@ -86,15 +86,7 @@ add_action('do_feed_super', 'my_custom_rss_render', 10, 1); // Make sure to have
 
 
 add_action( 'after_setup_theme', 'my_rss_template' );
-/**
- * Register custom RSS template.
- */
-// function my_rss_template() {
-//     add_feed( 'weekly', 'my_custom_rss_render' );
-// }
-/**
- * Custom RSS template callback.
- */
+
 function my_custom_rss_render() {
     get_template_part( 'feed', 'weekly' );
 }
