@@ -38,11 +38,13 @@ $weeklyID = $weekly->posts[0]->ID;
     while ( have_rows('ads') ) : the_row();
 
 
-      
+      // $event = get_sub_field('ads');
+      // $start = get_field('start_time', $event->ID);
+      // $end = get_field('end_time', $event->ID);
 
       ?>
 
-          <a href="<?php echo get_post_permalink($event->ID) ?>" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by <?php the_field('name');> </a>
+          <a href="<?php echo get_post_permalink($event->ID) ?>" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><?php echo $event->title; ?> </a>
     <?php
     endwhile;
 
