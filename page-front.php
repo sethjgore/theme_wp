@@ -34,7 +34,7 @@ $weeklyID = $weekly->posts[0]->ID;
      <?php // check if the repeater field has rows of data
     if( have_rows('ads') ):
 
-      print_r(get_field('ads'))
+   
 
     // loop through the rows of data
     while ( have_rows('ads') ) : the_row();
