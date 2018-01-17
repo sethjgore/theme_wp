@@ -26,7 +26,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
         <title><?php wp_title_rss();  ?></title>
         <link><?php bloginfo_rss( 'url' ); ?></link>
         <description>
-                <?php $id = $weekly['posts'][0]['ID']; echo $id; echo get_field('quote', $id);?>
+                <?php print_r($weekly->posts); $id = $weekly['posts'][0]['ID']; echo $id; echo get_field('quote', $id);?>
                         
         </description>
 
