@@ -38,7 +38,7 @@ $weeklyID = $weekly->posts[0]->ID;
 
       $ad = get_row();
       $image = get_field('sponsor_image', $ad);
-      print_r($image->thumbnail)
+      print_r($image)
       // $start = get_field('start_time', $event->ID);
       // $end = get_field('end_time', $event->ID);
       ?>
