@@ -5,6 +5,15 @@
  * @package WordPress
  */
 
+
+function timed($start, $end){
+    if($start && $end){
+        echo $start." - ".$end;
+      }else if($start){
+        echo $start;
+      }
+}
+
 header( 'Content-Type: ' . feed_content_type( 'rss' ) . '; charset=' . get_option( 'blog_charset' ), true );
 $more = 1;
 
@@ -37,11 +46,31 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
 <?php
 while ( $weekly->have_posts() ) :
         the_post();
+
+
 ?>
+
+ <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
+
+        
+
+      <?php // check if the repeater field has rows of data
+    if( have_rows('cycle_events') ):
+
+    // loop through the rows of data
+    while ( have_rows('cycle_events') ) : the_row();
+
+
+      $event = get_sub_field('event');
+      $start = get_field('start_time', $event->ID);
+      $end = get_field('end_time', $event->ID);
+
+      ?>
         <item>
-                <title><?php the_field('title'); ?></title>
-                <description><![CDATA[<?php the_field('description'); ?>]]></description>
-                <link><?php the_permalink() ?></link>
+          <link><?php echo get_post_permalink($event->ID) ?><link>
+           <title><?php echo $event->title; ?> </title>
+           <pubDate><?php echo the_field('date', $event->ID) ?> @ <?php timed($start,$end);?></pubDate>
+        <description><![CDATA[<?php echo $event->description; ?>]]></description>
                 <?php
                 /**
                  * Fires at the end of each RSS feed item.
@@ -51,6 +80,18 @@ while ( $weekly->have_posts() ) :
                 do_action( 'rss_item' );
                 ?>
         </item>
+
+    <?php
+    endwhile;
+
+    else:
+
+    // no rows found
+    endif; ?>
+
+
+<?php endwhile; ?>
+     
 <?php endwhile; ?>
 
 </channel>
