@@ -23,7 +23,6 @@ $weeklyID = $weekly->posts[0]->ID;
         <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;
           animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>;">
           <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><?php the_field('quote', $weeklyID) ?></div>
-          <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
 
           
@@ -38,12 +37,13 @@ $weeklyID = $weekly->posts[0]->ID;
     while ( have_rows('ads') ) : the_row();
 
       $ad = get_row();
-      echo $ad;
+      $image = get_field('sponsor_image', $ad);
+      print_r($image)
       // $start = get_field('start_time', $event->ID);
       // $end = get_field('end_time', $event->ID);
       ?>
 
-          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by<img src="type-size-two height-three" src="<?php echo $ad['sponsor_image']['SRC']?>"><?php the_field('sponsor_name', $ad); ?><?php echo $ad['sponsor_text']; ?></a>
+          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by<img src="type-size-two height-three" src="<?php echo $image['SRC']?>"><?php the_field('sponsor_name', $ad); ?><?php the_field('sponsor_text', $ad); ?></a>
     <?php
     endwhile;
 
