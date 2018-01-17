@@ -62,8 +62,8 @@ $weeklyID = $weekly->posts[0]->ID;
     if( have_rows('cycle_events') ):
 
     ?>
-      <div class="bold type-name-sans ticker__item type-size-menu height-full black flex items-center px2">Upcoming Events: </div>
-    <?
+      <div class="bold type-name-sans ticker__item type-size-menu height-full green-1 flex items-center px2">Upcoming Events: </div>
+    <?php
 
     // loop through the rows of data
     while ( have_rows('cycle_events') ) : the_row();
