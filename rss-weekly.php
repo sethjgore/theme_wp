@@ -40,8 +40,8 @@ while ( $weekly->have_posts() ) :
         the_post();
 ?>
         <item>
-                <title><?php the_title_rss(); ?></title>
-                <description><![CDATA[<?php the_excerpt_rss(); ?>]]></description>
+                <title><?php the_field('title'); ?></title>
+                <description><![CDATA[<?php the_field('description'); ?>]]></description>
                 <link><?php the_permalink_rss(); ?></link>
                 <?php
                 /**
