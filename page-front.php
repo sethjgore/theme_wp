@@ -32,9 +32,9 @@ $weeklyID = $weekly->posts[0]->ID;
   <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
 
      <?php // check if the repeater field has rows of data
+
+     print_r(the_field('ads'));
     if( have_rows('ads') ):
-
-
 
     // loop through the rows of data
     while ( have_rows('ads') ) : the_row();
