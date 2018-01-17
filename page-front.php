@@ -26,7 +26,7 @@ $weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
           animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>;">
           <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><?php echo get_field('quote', $weeklyID);?></div>
           
-        <?php if(get_field('sponsors', $weeklyID);){ echo "available sponsors"}?>
+        <?php if(get_field('sponsors', $weeklyID)){ echo "available sponsors"} ?>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Looking for interpreting services? Call us.</div>
