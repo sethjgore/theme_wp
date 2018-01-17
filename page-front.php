@@ -38,12 +38,12 @@ $weeklyID = $weekly->posts[0]->ID;
     while ( have_rows('ads') ) : the_row();
 
       $ad = get_row();
+      echo $ad;
       // $start = get_field('start_time', $event->ID);
       // $end = get_field('end_time', $event->ID);
-      print_r($ad);
       ?>
 
-          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by<img src="type-size-two height-three" src="<?php echo $ad['sponsor_image']['SRC']?>"><?php echo $ad['sponsor_name']; ?><?php echo $ad['sponsor_text']; ?></a>
+          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by<img src="type-size-two height-three" src="<?php echo $ad['sponsor_image']['SRC']?>"><?php the_field('sponsor_name', $ad); ?><?php echo $ad['sponsor_text']; ?></a>
     <?php
     endwhile;
 
