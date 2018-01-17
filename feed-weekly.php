@@ -59,9 +59,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
         <item>
           <link><?php echo get_post_permalink($event->ID) ?></link>
            <title><?php echo $event->title; ?> </title>
-           <source>
-                <title><?php echo the_field('date', $event->ID) ?> @ <?php timed($start,$end);?></title>
-                <url>www.deafnyc.com</url>
+           <source url="www.deafnyc.com" title="<?php echo the_field('date', $event->ID) ?> @ <?php timed($start,$end);?>">
         </source>
         <description><![CDATA[<?php echo $event->description; ?>]]></description>
                 <?php
