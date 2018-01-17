@@ -43,12 +43,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
          */
         do_action( 'rss_head' );
         ?>
-<?php
-while ( $weekly->have_posts() ) :
-        the_post();
 
-
-?>
 
  <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
 
@@ -90,8 +85,6 @@ while ( $weekly->have_posts() ) :
     endif; ?>
 
 
-<?php endwhile; ?>
-     
 <?php endwhile; ?>
 
 </channel>
