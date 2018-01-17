@@ -8,6 +8,9 @@
 header( 'Content-Type: ' . feed_content_type( 'rss' ) . '; charset=' . get_option( 'blog_charset' ), true );
 $more = 1;
 
+$weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
+
+
 echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>'; ?>
 <rss version="0.92">
 <channel>
@@ -33,7 +36,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
         ?>
 
 <?php
-while ( have_posts() ) :
+while ( $weekly->have_posts() ) :
         the_post();
 ?>
         <item>
