@@ -16,7 +16,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
 <channel>
         <title><?php wp_title_rss(); ?></title>
         <link><?php bloginfo_rss( 'url' ); ?></link>
-        <description><?php bloginfo_rss( 'description' ); ?></description>
+        <description><?php print_r($weekly) ?></description>
         <lastBuildDate>
         <?php
                 $date = get_lastpostmodified( 'GMT' );
@@ -35,23 +35,5 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
         do_action( 'rss_head' );
         ?>
 
-<?php
-while ( $weekly->have_posts() ) :
-        the_post();
-?>
-        <item>
-                <title><?php the_title_rss(); ?></title>
-                <description><![CDATA[<?php the_excerpt_rss(); ?>]]></description>
-                <link><?php the_permalink_rss(); ?></link>
-                <?php
-                /**
-                 * Fires at the end of each RSS feed item.
-                 *
-                 * @since 2.0.0
-                 */
-                do_action( 'rss_item' );
-                ?>
-        </item>
-<?php endwhile; ?>
 </channel>
 </rss>
