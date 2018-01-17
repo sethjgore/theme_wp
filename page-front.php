@@ -41,6 +41,7 @@ $weeklyID = $weekly->posts[0]->ID;
       // $start = get_field('start_time', $event->ID);
       // $end = get_field('end_time', $event->ID);
 
+      print_r($ad['sponsor_image'])
       ?>
 
           <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by<img src="type-size-two height-three" src="<?php echo $ad['sponsor_image']['SRC']?>"><?php echo $ad['sponsor_name']; ?><?php echo $ad['sponsor_text']; ?></a>
