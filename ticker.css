@@ -40,7 +40,8 @@
   
   position: fixed;
   /*bottom: 0;*/
-  width: 100%;
+  width: 80vw;
+  max-width: 80vw;
   overflow: hidden;
   /*height: 4rem;*/
   background-color: rgba(#000, 0.9); 
