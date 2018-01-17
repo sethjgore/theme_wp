@@ -16,7 +16,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
 <channel>
         <title><?php wp_title_rss(); ?></title>
         <link><?php bloginfo_rss( 'url' ); ?></link>
-        <description><?php print_r($weekly)</description>
+        <description>HELLO<?php print_r($weekly)<?php if($weekly->have_posts){echo YEAH; }?></description>
         <lastBuildDate>
         <?php
                 $date = get_lastpostmodified( 'GMT' );
