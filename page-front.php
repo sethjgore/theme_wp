@@ -10,7 +10,7 @@ $image = $images[$number]['image'];
 
 $weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
 
-$weeklyID = $weekly->posts[0]->ID;
+// $weeklyID = $weekly->posts[0]->ID;
 
 // print_r($image);
 
