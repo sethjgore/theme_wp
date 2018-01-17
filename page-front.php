@@ -20,7 +20,7 @@ $weeklyID = $weekly->posts[0]->ID;
         <div class="animated fadeInDown relative z4 flex flex-auto fb-02 width-full items-center justify-end">
 
     <div class="ticker-wrap">
-        <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;
+        <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>;
           animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>;">
           <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><?php the_field('quote', $weeklyID) ?></div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
@@ -96,7 +96,9 @@ $weeklyID = $weekly->posts[0]->ID;
       </div>
         <div class="items-center animated fadeInUp  flex quote justify-around flex-auto fb-05 flex">
             <img src="<?php echo THEME_IMAGES;?>/logo-green-large-black-solid.svg" class="type-size-one height-three ml2">
-                <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"><?php the_field('page_front_attention_description') ?></div> <img class="type-size-subtitle height-two mr2" src="<?php echo THEME_IMAGES;?>/right-arrow.svg"> </div> </div>
+                <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black 
+
+                  type-name-serif"><?php the_field('page_front_attention_description', 'option') ?></div> <img class="type-size-subtitle height-two mr2" src="<?php echo THEME_IMAGES;?>/right-arrow.svg"> </div> </div>
 
     </a>
   </div>
