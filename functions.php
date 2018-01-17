@@ -89,9 +89,9 @@ add_action( 'after_setup_theme', 'my_rss_template' );
 /**
  * Register custom RSS template.
  */
-function my_rss_template() {
-    add_feed( 'weekly', 'my_custom_rss_render' );
-}
+// function my_rss_template() {
+//     add_feed( 'weekly', 'my_custom_rss_render' );
+// }
 /**
  * Custom RSS template callback.
  */
