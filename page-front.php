@@ -12,8 +12,6 @@ $weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
 
 $weeklyID = $weekly->posts[0]->ID;
 
-print_r($weeklyID);
-
 ?>
 
 <?php get_header(); ?>
@@ -24,7 +22,7 @@ print_r($weeklyID);
     <div class="ticker-wrap">
         <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;
           animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>;">
-          <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><span class="gray bold nowrap"> - Elie Wiese</span></div>
+          <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><?php the_field('quote', $weeklyID) ?></div>
 
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
