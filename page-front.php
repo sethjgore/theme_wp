@@ -26,7 +26,7 @@ $image = $images[$number]['image'];
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Looking for interpreting services? Call us.</div>
         </div>
 </div>
-    <div class="flex height-full items-start p2"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-two mx2"></div>
+    <div class="flex height-full items-start mt3 mr3"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-two"></div>
 </div>
     <a href="<?php the_field('leads_to', 'option')?>" class="text-decoration-none relative fb-2 flex-auto flex-column flex">
 
