@@ -12,6 +12,7 @@ $weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
 
 $weeklyID = $weekly->posts[0]->ID;
 
+    print_r(get_field('ads', $weeklyID))
 ?>
 
 <?php get_header(); ?>
@@ -23,7 +24,6 @@ $weeklyID = $weekly->posts[0]->ID;
         <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;
           animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>;">
           <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><?php the_field('quote', $weeklyID) ?></div>
-          <?php the_field('quote', $weeklyID) ?>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by Sprint Communications</div>
           <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
 
@@ -34,7 +34,7 @@ $weeklyID = $weekly->posts[0]->ID;
      <?php // check if the repeater field has rows of data
     if( have_rows('ads') ):
 
-   
+
 
     // loop through the rows of data
     while ( have_rows('ads') ) : the_row();
