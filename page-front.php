@@ -38,7 +38,7 @@ $weeklyID = $weekly->posts[0]->ID;
 
       $ad = get_row();
       $adimage = get_field('sponsor_image', $ad);
-      // print_r($adimage)
+      // print_r($abs(number)dimage)
       // print_r($image->url)
       // print_r($image->sizes)
 
@@ -96,7 +96,7 @@ $weeklyID = $weekly->posts[0]->ID;
       </div>
         <div class="items-center animated fadeInUp  flex quote justify-around flex-auto fb-05 flex">
             <img src="<?php echo THEME_IMAGES;?>/logo-green-large-black-solid.svg" class="type-size-one height-three ml2">
-                <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"><?php the_field('attention_description') ?></div> <img class="type-size-subtitle height-two mr2" src="<?php echo THEME_IMAGES;?>/right-arrow.svg"> </div> </div>
+                <div class="slight-radius flex items-center bg-yellow"><div class="p2 type-size-title bold black type-name-serif"><?php the_field('page_front_attention_description') ?></div> <img class="type-size-subtitle height-two mr2" src="<?php echo THEME_IMAGES;?>/right-arrow.svg"> </div> </div>
 
     </a>
   </div>
