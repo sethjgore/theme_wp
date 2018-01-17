@@ -43,7 +43,7 @@ $weeklyID = $weekly->posts[0]->ID;
 
       ?>
 
-          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by<img src="type-size-two height-three" src="<?php echo $ad['sponsor_image']; ?>"><?php echo $ad['sponsor_name']; ?><?php echo $ad['sponsor_text']; ?></a>
+          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by<img src="type-size-two height-three" src="<?php echo $ad['sponsor_image']['URL']; ?>"><?php echo $ad['sponsor_name']; ?><?php echo $ad['sponsor_text']; ?></a>
     <?php
     endwhile;
 
