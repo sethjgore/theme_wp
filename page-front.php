@@ -37,8 +37,7 @@ $weeklyID = $weekly->posts[0]->ID;
     while ( have_rows('ads') ) : the_row();
 
       $ad = get_row();
-      $image = get_field('sponsor_image', $ad);
-      print_r($image)
+      // $image = get_field('sponsor_image', $ad);
       // print_r($image->url)
       // print_r($image->sizes)
 
