@@ -34,7 +34,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
          */
         do_action( 'rss_head' );
         ?>
-
+<!-- 
 <?php
 while ( $weekly->have_posts() ) :
         the_post();
@@ -52,6 +52,6 @@ while ( $weekly->have_posts() ) :
                 do_action( 'rss_item' );
                 ?>
         </item>
-<?php endwhile; ?>
+<?php endwhile; ?> -->
 </channel>
 </rss>
