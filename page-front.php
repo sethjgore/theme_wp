@@ -88,7 +88,7 @@ $weeklyID = $weekly->posts[0]->ID;
 <?php endwhile; ?>
 
 
-          <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Looking for interpreting services? Call us.</div>
+          <div class="type-name-sans ticker__item type-size-menu height-full bold green-1 flex items-center px2">Looking for interpreting services? Call us.</div>
         </div>
 </div>
     <div class="flex height-full items-start mt3 mr3"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-two"></div>
