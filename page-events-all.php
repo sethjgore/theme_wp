@@ -19,7 +19,7 @@
 
 <?php
 
-  $cycle = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
+  $weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
 ?>
 
 <div id="app" class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
@@ -57,7 +57,7 @@
         </div></a></div>
        
 
-  <?php while( $cycle->have_posts() ) : $cycle->the_post(); ?>
+  <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
       
 
       <?php // check if the repeater field has rows of data
