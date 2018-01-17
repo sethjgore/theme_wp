@@ -61,6 +61,10 @@ $weeklyID = $weekly->posts[0]->ID;
       <?php // check if the repeater field has rows of data
     if( have_rows('cycle_events') ):
 
+    ?>
+      <div class="bold type-name-sans ticker__item type-size-menu height-full black flex items-center px2">Upcoming Events: </div>
+    <?
+
     // loop through the rows of data
     while ( have_rows('cycle_events') ) : the_row();
 
