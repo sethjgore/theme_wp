@@ -37,15 +37,13 @@ $weeklyID = $weekly->posts[0]->ID;
     // loop through the rows of data
     while ( have_rows('ads') ) : the_row();
 
-
-      $event = get__field('name');
-      $ID = get_field('ID');
+      $ad = get_row();
       // $start = get_field('start_time', $event->ID);
       // $end = get_field('end_time', $event->ID);
 
       ?>
 
-          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><?php echo $ID; echo $event; ?> </a>
+          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><?php echo $ad->ID; echo $ad->name; ?> </a>
     <?php
     endwhile;
 
