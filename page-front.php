@@ -38,8 +38,8 @@ $weeklyID = $weekly->posts[0]->ID;
     while ( have_rows('ads') ) : the_row();
 
 
-      $event = get_sub_field('name');
-      $ID = get_sub_field('ID');
+      $event = get__field('name');
+      $ID = get_field('ID');
       // $start = get_field('start_time', $event->ID);
       // $end = get_field('end_time', $event->ID);
 
