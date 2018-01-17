@@ -46,7 +46,7 @@ $weeklyID = $weekly->posts[0]->ID;
       // $end = get_field('end_time', $event->ID);
       ?>
 
-          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by <?php the_field('sponsor_name', $ad); ?> <img src="type-size-two height-three" src="<?php echo $image['SRC']?>">  <?php the_field('sponsor_text', $ad); ?></a>
+          <a href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Sponsored by <?php the_field('sponsor_name', $ad); ?> <img src="type-size-two height-three" src="<?php echo $adimage['url']?>">  <?php the_field('sponsor_text', $ad); ?></a>
     <?php
     endwhile;
 
