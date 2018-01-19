@@ -32,7 +32,7 @@ define( 'WP_DEBUG', true );
                 Send your event and get people to come!
             </div>
         </div>
-        <div id="deafnyc-contact" class="bg-white animated fadeIn  flex-auto fb-1 overflow-auto " style="-webkit-overflow-scrolling: touch !important;">
+        <div id="deafnyc-contact" class="animated fadeIn  flex-auto fb-1 overflow-auto " style="-webkit-overflow-scrolling: touch !important;">
         <div id="popup-id" class="my3 bg-white relative z1">
             <div class="py1 bg-blue-royal
             center bold type-name-sans type-size-title white">New Event Form
