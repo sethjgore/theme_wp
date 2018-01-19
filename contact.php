@@ -33,7 +33,7 @@ define( 'WP_DEBUG', true );
             </div>
         </div>
         <div id="deafnyc-contact" class="animated fadeIn  flex-auto fb-1 overflow-auto " style="-webkit-overflow-scrolling: touch !important;">
-        <div id="popup-id" class="my3 bg-white relative z1">
+        <div id="popup-id" style="margin: 25vh 0" class="bg-white relative z1">
             <div class="py1 bg-blue-royal
             center bold type-name-sans type-size-title white">New Event Form
             </div>
