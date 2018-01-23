@@ -23,7 +23,7 @@ $weeklyID = $weekly->posts[0]->ID;
         <div class="ticker px2" style="-webkit-animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;
           animation-duration: <?php the_field('page_front_ticker_speed', 'option')?>s;">
           <div class="pr2 ticker__item type-size-menu type-name-sans green-1"><?php the_field('quote', $weeklyID) ?></div>
-          <div class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</div>
+          <a text-decoration class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2">Presented by DHIS Interpreting.</a>
 
           
 
@@ -46,7 +46,7 @@ $weeklyID = $weekly->posts[0]->ID;
       // $end = get_field('end_time', $event->ID);
       ?>
 
-          <div href="" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><span class="bold">Sponsored by <?php the_field('sponsor_name', $ad); ?>&nbsp;</span> <!-- <img src="type-size-two height-three" src="<?php echo $adimage['url']?>"> -->  <?php the_field('sponsor_text', $ad); ?></div>
+          <a href="<?php the_field('sponsor_link', $ad); ?>" class="type-name-sans ticker__item type-size-menu height-full trans-black flex items-center px2"><span class="bold">Sponsored by <?php the_field('sponsor_name', $ad); ?> • </span> <!-- <img src="type-size-two height-three" src="<?php echo $adimage['url']?>"> -->  <?php the_field('sponsor_text', $ad); ?></a>
     <?php
     endwhile;
 
@@ -88,7 +88,7 @@ $weeklyID = $weekly->posts[0]->ID;
 <?php endwhile; ?>
 
 
-          <div class="type-name-sans ticker__item type-size-menu height-full bold green-1 flex items-center px2">Looking for interpreting services? Call us.</div>
+          <a href="<?php echo $options['dhis_logo_link'] ?>" class="type-name-sans ticker__item type-size-menu height-full bold green-1 flex items-center px2">Looking for interpreting services? Call us.</a>
         </div>
 </div>
     <div class="flex height-full items-start mt3 mr3"><img src="<?php echo THEME_IMAGES;?>/logo-dhis.png" class="type-size-two height-two"></div>
