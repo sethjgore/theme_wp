@@ -19,7 +19,7 @@
 
 <?php
 
-  $weekly = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
+  $cycle = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
 ?>
 
 <div id="app" class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
@@ -57,7 +57,7 @@
         </div></a></div>
        
 
-  <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
+  <?php while( $cycle->have_posts() ) : $cycle->the_post(); ?>
       
 
       <?php // check if the repeater field has rows of data
@@ -146,7 +146,7 @@
     </div>
 
 
-<div id="modalSubscribe"class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
+<div id="modalSubscribe" class="hide flex-column bg-g4 height-full flex items-center justify-center absolute z4 width-full-viewport height-full-viewport top-0 right-0 left-0">
 
 
         <div onclick="toggle('#modalSubscribe')" class="absolute z0 width-full height-full bottom-0 top-0 right-0 left-0"></div>
