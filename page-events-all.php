@@ -19,7 +19,7 @@
 
 <?php
 
-  $cycle = new WP_Query( [ 'post_type' => 'cycles', 'posts_per_page' => 1 ] );
+  $cycle = new WP_Query( [ 'post_type' => 'weekly', 'posts_per_page' => 1 ] );
 ?>
 
 <div id="app" class="relative fb-1 flex-auto flex" style="background: url(), #e2e2e2 center center; background-size: cover;">
