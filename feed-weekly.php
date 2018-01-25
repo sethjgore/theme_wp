@@ -29,6 +29,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
                 <?php $id = $weekly->posts[0]->ID; echo get_field('quote', $id);?>
                         
         </description>
+        <pubDate><?php the_date(); ?></pubDate>
 
         <?php
         /**
@@ -42,7 +43,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
 
  <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
 
-        
+      
 
       <?php // check if the repeater field has rows of data
     if( have_rows('cycle_events') ):
