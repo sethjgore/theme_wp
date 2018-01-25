@@ -43,7 +43,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
 
  <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
   
-      <pubDate><?php $time = get_the_time('D, j M Y h:i:s'); $z = $get_option('timezone_string'); echo $z; $zone=$z->format('T'); echo $time." ".$zone; ?></pubDate>
+      <pubDate><?php $time = get_the_time('D, j M Y h:i:s \E\S\T'); ?></pubDate>
       
 
       <?php // check if the repeater field has rows of data
