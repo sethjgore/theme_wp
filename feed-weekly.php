@@ -43,7 +43,7 @@ echo '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>
 
  <?php while( $weekly->have_posts() ) : $weekly->the_post(); ?>
   
-      <pubDate><?php the_date(); ?></pubDate>
+      <pubDate><?php $time = get_post_time(); $date =  get_the_date(); date('r', $date.' '.$time); ?></pubDate>
       
 
       <?php // check if the repeater field has rows of data
