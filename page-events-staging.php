@@ -1,5 +1,5 @@
 <?php
- /* Template Name: Event List Staging */
+ /* Template Name: Event Staging */
 
  define( 'THEME_IMAGES', get_template_directory_uri().'/images' );
 
